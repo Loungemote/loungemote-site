@@ -54,7 +54,7 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}">
 <script>document.documentElement.classList.add("js")</script>
 {%- if page.alternates %}
-{%- assign faq = t.faq.items | default: site.data.faq %}
+{%- assign faq = t.faq.items %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

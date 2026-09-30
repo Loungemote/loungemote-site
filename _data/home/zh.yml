@@ -15,9 +15,10 @@ badge:
   soon_label: 即将登陆 App Store
 hero:
   eyebrow: iPhone 和 iPad 电视遥控器
-  title: 手机就是电视遥控器。
+  title: 手机就是<br><em>电视遥控器</em>。
   lead: Loungemote 是万能电视遥控器 App。它通过 Wi-Fi 控制三星、LG、索尼、小米、海信、Roku、Fire TV、Android TV 和 Google TV 等智能电视。无需红外发射器，无需账号，没有广告。
   how_link: 看看怎么用
+  works_with: 支持
   trust: [免费试用 3 天, 没有广告, 无需账号]
   alt: Loungemote 遥控界面：方向键和确认键、媒体键、音量和频道。
 features:
@@ -26,14 +27,11 @@ features:
   footnote: 部分功能取决于电视型号和软件版本。
   items:
     - { icon: dpad, title: 完整遥控, text: 方向键、确认、返回、主页、音量、频道、播放控制和电源键。自动发现 Wi-Fi 里的电视，打开 App 即自动重连。 }
-    - { icon: bolt, title: 用 Wi-Fi 开机, text: 在支持的电视上，用手机唤醒待机的电视。 }
-    - { icon: big, title: 简洁布局, text: 按钮更大、标注清楚，适合家里每个人。 }
+    - { icon: hand, title: 滑动触控板, text: 单手滑动浏览菜单，轻点确认。LG 电视还能控制屏幕指针。 }
     - { icon: keyboard, title: 手机键盘, text: 用 iPhone 键盘在电视上输入搜索内容和登录信息，不用再一个字母一个字母地选。 }
     - { icon: grid, title: 一键打开应用, text: 电视上的应用排成一页，从手机直接打开。 }
-    - { icon: hand, title: 滑动触控板, text: 单手滑动浏览菜单，轻点确认。LG 电视还能控制屏幕指针。 }
     - { icon: cast, title: 投屏到电视, text: 把照片、幻灯片、视频、文件和链接投到电视、Chromecast 或 Roku。 }
-    - { icon: tv, title: 全家电视, text: 保存客厅、卧室和书房的电视，一键切换。 }
-    - { icon: mic, title: Siri 与快捷指令, text: 用语音开关电视、静音或打开应用。 }
+    - { icon: bolt, title: 用 Wi-Fi 开机, text: 在支持的电视上，用手机唤醒待机的电视。 }
 how:
   title: 几秒钟就能用。
   lead: 不用注册，不用额外硬件。电视连上 Wi-Fi 就差不多准备好了。
@@ -57,7 +55,7 @@ devices:
     - { name: Amazon Fire TV, detail: Fire TV Stick、Fire TV Cube 和 Fire TV 电视 }
     - { name: Vizio, detail: SmartCast 电视 }
 privacy:
-  title: 从设计上保护隐私。
+  title: 从设计上<em>保护隐私</em>。
   lead: 遥控器没有理由知道你是谁。Loungemote 没有账号，也没有自己的服务器，遥控指令直接从手机发到电视。
   link: 阅读隐私政策（英文）
   items:
