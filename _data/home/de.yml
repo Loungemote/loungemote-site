@@ -1,0 +1,91 @@
+# German home page (/de/). Facts follow index.html and the App Store copy (docs/app-store/metadata.json).
+title: "Loungemote: TV-Fernbedienung als App für Samsung, LG, Sony & Fire TV"
+description: TV-Fernbedienung für iPhone und iPad, Pro 3 Tage gratis testen. Steuere Samsung, LG, Sony, Fire TV, Google TV, Philips und mehr per WLAN. Ohne Infrarot, ohne Konto, ohne Werbung.
+nav:
+  features: Funktionen
+  how: So geht's
+  devices: Fernseher
+  privacy: Datenschutz
+  faq: FAQ
+  support: Hilfe
+  get: App laden
+badge:
+  small: Laden im
+  soon: Bald im
+  soon_label: Bald im App Store
+hero:
+  eyebrow: TV-Fernbedienung für iPhone und iPad
+  title: Eine Fernbedienung für jeden Fernseher im Haus.
+  lead: Loungemote ist eine Fernbedienungs-App für iPhone und iPad. Sie steuert Samsung, LG, Sony, Fire TV, Android TV, Google TV, Philips, Hisense, Roku und weitere Smart TVs über dein WLAN. Ohne Infrarot-Adapter, ohne Konto, ohne Werbung.
+  how_link: So funktioniert's
+  trust: [3 Tage gratis, Keine Werbung, Kein Konto]
+  alt: "Die Loungemote-Fernbedienung: Steuerkreuz mit OK-Taste, Medientasten, Lautstärke und Sender."
+features:
+  title: Alles, was deine Fernbedienung kann. Und mehr.
+  lead: Die komplette Tasten-Fernbedienung, dazu Touchpad, Handytastatur, Apps mit einem Tipp und Streaming.
+  footnote: Einige Funktionen hängen vom TV-Modell und seiner Software ab.
+  items:
+    - { icon: dpad, title: Komplette Fernbedienung, text: "Steuerkreuz, OK, Zurück, Home, Lautstärke, Sender, Wiedergabe und Ein/Aus. Findet Fernseher im WLAN von selbst und verbindet sich beim Öffnen neu." }
+    - { icon: bolt, title: Einschalten per WLAN, text: Wecke einen Fernseher im Standby vom Handy aus, wenn er das unterstützt. }
+    - { icon: big, title: Einfaches Layout, text: "Große, klar beschriftete Tasten für die ganze Familie." }
+    - { icon: keyboard, title: Handytastatur, text: "Suchbegriffe und Anmeldedaten mit der iPhone-Tastatur eingeben, statt Buchstabe für Buchstabe." }
+    - { icon: grid, title: Apps mit einem Tipp, text: "Alle Apps des Fernsehers auf einen Blick, direkt vom Handy öffnen." }
+    - { icon: hand, title: Wisch-Touchpad, text: "Mit dem Daumen durch Menüs wischen und tippen für OK. Bei LG auch mit Zeiger." }
+    - { icon: cast, title: Auf den Fernseher streamen, text: "Fotos, Diashows, Videos, Dateien und Links auf Fernseher, Chromecast oder Roku." }
+    - { icon: tv, title: Alle Fernseher im Haus, text: "Wohnzimmer, Schlafzimmer, Büro speichern und mit einem Tipp wechseln." }
+    - { icon: mic, title: Siri und Kurzbefehle, text: "Fernseher per Sprache ein- und ausschalten, stummschalten oder Apps öffnen." }
+how:
+  title: In Sekunden bereit.
+  lead: Keine Anmeldung, keine Zusatzgeräte. Ist der Fernseher im WLAN, bist du fast fertig.
+  steps:
+    - { screen: choose-tv, title: App im WLAN öffnen, text: Loungemote durchsucht dein Netzwerk und zeigt die gefundenen Fernseher und Streaming-Geräte., alt: "Fernseher wählen: die in diesem WLAN gefundenen Fernseher." }
+    - { screen: pair, title: Einmal am Fernseher bestätigen, text: "Wähle am Fernseher „Zulassen“ oder gib den angezeigten Code ein. Nur beim ersten Mal.", alt: "Fernseher koppeln: Der Fernseher fragt, ob er diesem iPhone vertrauen soll." }
+    - { screen: remote, title: Loslegen, text: Dein Handy ist jetzt die Fernbedienung. Beim nächsten Öffnen verbindet sich die App von selbst., alt: Die Fernbedienung ist mit dem Wohnzimmer-Fernseher verbunden. }
+devices:
+  title: Zehn TV-Plattformen. Eine App.
+  lead: Loungemote nutzt das Netzwerkprotokoll des jeweiligen Fernsehers, daher braucht es keinen Infrarot-Adapter und keinen Hub. iPhone und Fernseher müssen nur im selben WLAN sein.
+  footnote: Roku-TV- und Google-TV-Modelle anderer Marken wie TCL funktionieren ebenfalls. Streaming auf Fire TV wird nicht unterstützt. Apple TV und reine Infrarot-Fernseher werden nicht unterstützt.
+  items:
+    - { name: Samsung, detail: "Smart TVs mit Tizen, ab 2016" }
+    - { name: LG, detail: Smart TVs mit webOS }
+    - { name: Sony, detail: Bravia-Fernseher }
+    - { name: Amazon Fire TV, detail: "Fire TV Stick, Fire TV Cube und Fernseher mit Fire TV" }
+    - { name: Android TV und Google TV, detail: "Fernseher und Streaming-Geräte, auch Chromecast mit Google TV" }
+    - { name: Philips, detail: Fernseher mit Titan OS oder Saphi }
+    - { name: Hisense, detail: Fernseher mit VIDAA }
+    - { name: Xiaomi, detail: Fernseher mit PatchWall }
+    - { name: Roku, detail: Roku TVs und Roku-Player }
+    - { name: Vizio, detail: SmartCast-Fernseher }
+privacy:
+  title: Privat von Anfang an.
+  lead: Eine Fernbedienung muss nicht wissen, wer du bist. Loungemote hat keine Konten und keine eigenen Server, und Befehle gehen direkt vom Handy zum Fernseher.
+  link: Datenschutzerklärung lesen (Englisch)
+  items:
+    - { icon: useroff, title: Kein Konto, text: "Keine Registrierung, keine E-Mail-Adresse, keine Anmeldung." }
+    - { icon: eyeoff, title: Keine Werbung, text: Kein Werbecode und keine Werbe-ID. }
+    - { icon: wifi, title: Bleibt in deinem Netzwerk, text: Befehle gehen über dein WLAN direkt an den gewählten Fernseher. }
+    - { icon: lock, title: Schlüssel bleiben auf dem iPhone, text: Kopplungsdaten liegen im iOS-Schlüsselbund und werden nie an uns gesendet. }
+  note: "Die App sendet anonyme Nutzungsstatistiken und Absturzberichte an Google (Firebase), damit wir sehen, welche Fernseher sich verbinden, und Fehler beheben können. Sie enthalten nie Fernsehernamen, Netzwerkadressen, getippten Text oder gestreamte Inhalte. Du kannst das unter Einstellungen > Datenschutz > Nutzungsdaten teilen ausschalten. Beim Streamen auf ein Google-Cast-Gerät sendet auch Googles Cast SDK Diagnosedaten an Google."
+faq:
+  title: Häufige Fragen
+  more: Noch Fragen? Schreib uns an
+  items:
+    - q: Ist Loungemote kostenlos?
+      a: "Download, Einrichtung und Demo TV sind kostenlos und ohne Werbung. Zum Steuern des Fernsehers brauchst du Loungemote Pro: die komplette Fernbedienung, Touchpad, Handytastatur, App-Start, Siri und Kurzbefehle sowie das Streamen von Fotos, Videos, Dateien und Links. Pro gibt es als Wochenabo (für Neukunden 3 Tage gratis), als Jahresabo oder als einmaligen Kauf."
+    - q: Welche Fernseher werden unterstützt?
+      a: Samsung Smart TVs mit Tizen (ab 2016), LG mit webOS, Sony Bravia, Amazon Fire TV, Android TV und Google TV, Philips mit Titan OS oder Saphi, Hisense mit VIDAA, Xiaomi mit PatchWall, Roku und Vizio SmartCast. Roku-TV- und Google-TV-Modelle anderer Marken wie TCL funktionieren ebenfalls. Apple TV und reine Infrarot-Fernseher werden nicht unterstützt.
+    - q: Brauche ich einen Infrarot-Adapter oder eine Universalfernbedienung?
+      a: Nein. Loungemote steuert Smart TVs über dein WLAN. Infrarot wird nicht genutzt, daher lassen sich ältere Fernseher, die nur auf Infrarot reagieren, nicht steuern.
+    - q: Die App findet meinen Fernseher nicht. Was tun?
+      a: Prüfe, ob der Fernseher eingeschaltet und im selben WLAN wie das iPhone ist (Gastnetzwerke blockieren oft die Verbindung). Schalte Loungemote unter iOS-Einstellungen > Datenschutz & Sicherheit > Lokales Netzwerk ein. Findet die App den Fernseher weiterhin nicht, füge ihn über seine IP-Adresse hinzu.
+    - q: Kann ich den Fernseher mit dem Handy einschalten?
+      a: Bei vielen Fernsehern ja. Schalte vorher am Fernseher das Einschalten über das Netzwerk ein, zum Beispiel Power On with Mobile bei Samsung, Turn on via Wi-Fi bei LG oder Fast TV start bei Roku TV. Die Namen können je nach Modell und Sprache abweichen.
+    - q: Welche Daten erhebt Loungemote?
+      a: Keine personenbezogenen Daten. Es gibt keine Konten und keine Werbung, und Befehle gehen direkt vom iPhone zum Fernseher. Um zu sehen, welche Fernseher sich verbinden, und Abstürze zu beheben, sendet die App anonyme Nutzungsstatistiken und Absturzberichte an Google Analytics for Firebase und Firebase Crashlytics. Sie enthalten nie Fernsehernamen, Netzwerkadressen, getippten Text oder gestreamte Inhalte. Du kannst das unter Einstellungen > Datenschutz > Nutzungsdaten teilen ausschalten.
+    - q: Gibt es die App für iPad und auf Deutsch?
+      a: Ja. Auf dem iPad gibt es eine geteilte Ansicht. Loungemote braucht iOS 17 oder iPadOS 17 oder neuer und ist auf Deutsch, Englisch, Chinesisch (vereinfacht und traditionell), Japanisch, Koreanisch, Französisch, Spanisch, Portugiesisch (Brasilien), Russisch und Indonesisch verfügbar.
+cta:
+  title: Leg die Fernbedienung weg.
+  live: Loungemote gibt es kostenlos für iPhone und iPad.
+  soon: Loungemote gibt es bald kostenlos für iPhone und iPad.
+  meta: Erfordert iOS 17 oder iPadOS 17 oder neuer.

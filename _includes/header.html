@@ -1,4 +1,8 @@
+{%- comment -%} On a translated home page (page.i18n) the menu uses that page's text and its own sections. {%- endcomment -%}
+{%- assign t = site.data.home[page.i18n].nav -%}
 {%- assign home = '/' | relative_url -%}
+{%- assign here = home -%}
+{%- if page.i18n %}{% assign here = page.url | relative_url %}{% endif -%}
 <header class="site-header" data-header>
   <div class="container site-header__inner">
     <a class="brand" href="{{ home }}" aria-label="Loungemote home">
@@ -12,14 +16,14 @@
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Main" data-nav>
       <ul>
-        <li><a href="{{ home }}#features">Features</a></li>
-        <li><a href="{{ home }}#how-it-works">How it works</a></li>
-        <li><a href="{{ home }}#devices">Devices</a></li>
-        <li><a href="{{ home }}#privacy">Privacy</a></li>
-        <li><a href="{{ home }}#faq">FAQ</a></li>
-        <li><a href="{{ '/support/' | relative_url }}"{% if page.url == '/support/' %} aria-current="page"{% endif %}>Support</a></li>
+        <li><a href="{{ here }}#features">{{ t.features | default: "Features" }}</a></li>
+        <li><a href="{{ here }}#how-it-works">{{ t.how | default: "How it works" }}</a></li>
+        <li><a href="{{ here }}#devices">{{ t.devices | default: "Devices" }}</a></li>
+        <li><a href="{{ here }}#privacy">{{ t.privacy | default: "Privacy" }}</a></li>
+        <li><a href="{{ here }}#faq">{{ t.faq | default: "FAQ" }}</a></li>
+        <li><a href="{{ '/support/' | relative_url }}"{% if page.url == '/support/' %} aria-current="page"{% endif %}>{{ t.support | default: "Support" }}</a></li>
       </ul>
-      <a class="button button--small button--ember" href="{{ home }}#download">Get the app</a>
+      <a class="button button--small button--ember" href="{{ here }}#download">{{ t.get | default: "Get the app" }}</a>
     </nav>
   </div>
 </header>

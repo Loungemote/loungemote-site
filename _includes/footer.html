@@ -15,7 +15,10 @@
           <li><a href="{{ home }}#features">Features</a></li>
           <li><a href="{{ home }}#how-it-works">How it works</a></li>
           <li><a href="{{ home }}#devices">Supported devices</a></li>
-          <li><a href="{{ home }}#pricing">Free and Pro</a></li>
+          <li><a href="{{ '/samsung-tv-remote/' | relative_url }}">Samsung TV remote</a></li>
+          <li><a href="{{ '/lg-tv-remote/' | relative_url }}">LG TV remote</a></li>
+          <li><a href="{{ '/roku-remote/' | relative_url }}">Roku remote</a></li>
+          <li><a href="{{ '/fire-tv-remote/' | relative_url }}">Fire TV remote</a></li>
           <li><a href="{{ home }}#faq">FAQ</a></li>
         </ul>
       </nav>
@@ -35,6 +38,12 @@
         </ul>
       </nav>
     </div>
+    <nav class="site-footer__legal" aria-label="Language">
+      <a href="{{ home }}" hreflang="en" lang="en"{% unless page.i18n %} aria-current="page"{% endunless %}>English</a>
+      {%- for lang in site.data.languages %} ·
+      <a href="{{ lang.url | relative_url }}" hreflang="{{ lang.hreflang }}" lang="{{ lang.hreflang }}"{% if page.i18n == lang.i18n %} aria-current="page"{% endif %}>{{ lang.label }}</a>
+      {%- endfor %}
+    </nav>
     <p class="site-footer__legal">{% include trademarks.html %}</p>
     <p class="site-footer__legal">&copy; {{ site.time | date: "%Y" }} Loungemote. Apple, iPhone, iPad and App Store are trademarks of Apple Inc.</p>
   </div>

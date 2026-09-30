@@ -3,14 +3,15 @@
   with a URL it becomes the download link. Replace it with Apple's official badge artwork if you prefer
   (https://developer.apple.com/app-store/marketing/guidelines/).
 {%- endcomment -%}
+{%- assign b = site.data.home[page.i18n].badge -%}
 {%- if site.app_store_url and site.app_store_url != "" -%}
 <a class="store-badge" href="{{ site.app_store_url }}" rel="noopener">
   {% include icon.html name="download" %}
-  <span><small>Download on the</small><strong>App Store</strong></span>
+  <span><small>{{ b.small | default: "Download on the" }}</small><strong>App Store</strong></span>
 </a>
 {%- else -%}
-<span class="store-badge store-badge--soon" role="img" aria-label="Coming soon to the App Store">
+<span class="store-badge store-badge--soon" role="img" aria-label="{{ b.soon_label | default: 'Coming soon to the App Store' }}">
   {% include icon.html name="download" %}
-  <span aria-hidden="true"><small>Coming soon to the</small><strong>App Store</strong></span>
+  <span aria-hidden="true"><small>{{ b.soon | default: "Coming soon to the" }}</small><strong>App Store</strong></span>
 </span>
 {%- endif -%}

@@ -18,9 +18,9 @@ Apple's [Licensed Application End User License Agreement (Standard EULA)](https:
 
 ## Loungemote Pro
 
-The button remote for one TV is free. Some features need Loungemote Pro. You can get Loungemote Pro as:
+Loungemote is free to download. Setting up a TV, a first key press to check the connection, and the Demo TV are free. Controlling a TV and the other features need Loungemote Pro. You can get Loungemote Pro as:
 
-- an auto-renewable weekly subscription,
+- an auto-renewable weekly subscription, which starts with a 3-day free trial for eligible new subscribers,
 - an auto-renewable yearly subscription,
 - a one-time lifetime purchase.
 

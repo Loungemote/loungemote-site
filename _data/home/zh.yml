@@ -1,0 +1,91 @@
+# Simplified Chinese home page (/zh/). Facts follow index.html and the App Store copy (docs/app-store/metadata.json).
+title: Loungemote - 万能电视遥控器：三星、LG、索尼、Roku 手机遥控
+description: iPhone 和 iPad 电视遥控器，Pro 可免费试用 3 天。通过 Wi-Fi 控制三星、LG、索尼、小米、海信、Roku、Fire TV、Google TV 等智能电视。无需红外，无需账号，没有广告。
+nav:
+  features: 功能
+  how: 使用方法
+  devices: 支持的电视
+  privacy: 隐私
+  faq: 常见问题
+  support: 支持
+  get: 获取 App
+badge:
+  small: 下载于
+  soon: 即将登陆
+  soon_label: 即将登陆 App Store
+hero:
+  eyebrow: iPhone 和 iPad 电视遥控器
+  title: 一部手机，遥控家里所有电视。
+  lead: Loungemote 是万能电视遥控器 App。它通过 Wi-Fi 控制三星、LG、索尼、小米、海信、Roku、Fire TV、Android TV 和 Google TV 等智能电视。无需红外发射器，无需账号，没有广告。
+  how_link: 看看怎么用
+  trust: [免费试用 3 天, 没有广告, 无需账号]
+  alt: Loungemote 遥控界面：方向键和确认键、媒体键、音量和频道。
+features:
+  title: 遥控器能做的，它都能做。
+  lead: 完整按键遥控，加上触控板、手机键盘、一键打开应用和投屏，让你把旧遥控器收起来。
+  footnote: 部分功能取决于电视型号和软件版本。
+  items:
+    - { icon: dpad, title: 完整遥控, text: 方向键、确认、返回、主页、音量、频道、播放控制和电源键。自动发现 Wi-Fi 里的电视，打开 App 即自动重连。 }
+    - { icon: bolt, title: 用 Wi-Fi 开机, text: 在支持的电视上，用手机唤醒待机的电视。 }
+    - { icon: big, title: 简洁布局, text: 按钮更大、标注清楚，适合家里每个人。 }
+    - { icon: keyboard, title: 手机键盘, text: 用 iPhone 键盘在电视上输入搜索内容和登录信息，不用再一个字母一个字母地选。 }
+    - { icon: grid, title: 一键打开应用, text: 电视上的应用排成一页，从手机直接打开。 }
+    - { icon: hand, title: 滑动触控板, text: 单手滑动浏览菜单，轻点确认。LG 电视还能控制屏幕指针。 }
+    - { icon: cast, title: 投屏到电视, text: 把照片、幻灯片、视频、文件和链接投到电视、Chromecast 或 Roku。 }
+    - { icon: tv, title: 全家电视, text: 保存客厅、卧室和书房的电视，一键切换。 }
+    - { icon: mic, title: Siri 与快捷指令, text: 用语音开关电视、静音或打开应用。 }
+how:
+  title: 几秒钟就能用。
+  lead: 不用注册，不用额外硬件。电视连上 Wi-Fi 就差不多准备好了。
+  steps:
+    - { screen: choose-tv, title: 在 Wi-Fi 下打开 App, text: Loungemote 自动扫描网络，列出找到的电视和电视盒子。, alt: 选择电视：这个 Wi-Fi 网络中找到的电视。 }
+    - { screen: pair, title: 在电视上确认一次, text: 在电视上选择“允许”，或输入电视显示的配对码。只需第一次。, alt: 配对电视：电视询问是否信任这台 iPhone。 }
+    - { screen: remote, title: 开始遥控, text: 手机就是遥控器了。下次打开 App 会自动重连。, alt: 已连接客厅电视的遥控界面。 }
+devices:
+  title: 十个电视平台，一个 App。
+  lead: Loungemote 使用各电视自己的网络协议，不需要红外发射器或网关。iPhone 和电视连接同一个 Wi-Fi 即可。
+  footnote: TCL 等其他品牌的 Roku TV 和 Google TV 机型同样适用。Fire TV 不支持投屏。不支持 Apple TV 和仅支持红外控制的电视。
+  items:
+    - { name: 三星 Samsung, detail: Tizen 智能电视，2016 年及以后机型 }
+    - { name: LG, detail: webOS 智能电视 }
+    - { name: 索尼 Sony, detail: Bravia 电视 }
+    - { name: 小米 Xiaomi, detail: PatchWall 电视 }
+    - { name: 海信 Hisense, detail: VIDAA 电视 }
+    - { name: 飞利浦 Philips, detail: Titan OS 和 Saphi 电视 }
+    - { name: Android TV 和 Google TV, detail: 电视和电视盒子，包括 Chromecast with Google TV }
+    - { name: Roku, detail: Roku TV 和 Roku 播放器 }
+    - { name: Amazon Fire TV, detail: Fire TV Stick、Fire TV Cube 和 Fire TV 电视 }
+    - { name: Vizio, detail: SmartCast 电视 }
+privacy:
+  title: 从设计上保护隐私。
+  lead: 遥控器没有理由知道你是谁。Loungemote 没有账号，也没有自己的服务器，遥控指令直接从手机发到电视。
+  link: 阅读隐私政策（英文）
+  items:
+    - { icon: useroff, title: 无需账号, text: 不用注册，不用邮箱，没有需要登录的东西。 }
+    - { icon: eyeoff, title: 没有广告, text: 没有广告代码，不使用广告标识符。 }
+    - { icon: wifi, title: 留在你的网络里, text: 指令通过 Wi-Fi 直接发送到你选择的电视。 }
+    - { icon: lock, title: 密钥留在 iPhone 上, text: 配对数据保存在 iOS 钥匙串中，不会发送给我们。 }
+  note: App 会向 Google（Firebase）发送匿名使用统计和崩溃报告，帮助我们了解哪些电视连接顺利并修复问题。它从不包含电视名称、网络地址、你输入的文字或投放的内容，可在“设置 > 隐私 > 共享使用数据”中关闭。投屏到 Google Cast 设备时，Google 的 Cast SDK 也会向 Google 发送诊断数据。
+faq:
+  title: 常见问题
+  more: 还有其他问题？请发邮件至
+  items:
+    - q: Loungemote 免费吗？
+      a: 下载、设置和演示电视免费，且没有广告。控制电视需要 Loungemote Pro，包括完整遥控、触控板、手机键盘、应用启动、Siri 与快捷指令，以及照片、视频、文件和链接的投屏。Pro 提供周订阅（新订阅用户免费试用 3 天）、年订阅或一次性买断。
+    - q: 支持哪些电视？
+      a: 三星 Tizen 智能电视（2016 年及以后）、LG webOS 电视、索尼 Bravia、小米 PatchWall 电视、海信 VIDAA 电视、飞利浦 Titan OS 和 Saphi 电视、Android TV 和 Google TV 设备、Roku、Amazon Fire TV 和 Vizio SmartCast。TCL 等品牌的 Roku TV 和 Google TV 机型同样适用。不支持 Apple TV 和仅支持红外控制的电视。
+    - q: 需要红外发射器或万能遥控器吗？
+      a: 不需要。Loungemote 通过家里的 Wi-Fi 控制智能电视，不使用红外，所以无法控制只能用红外遥控的老电视。
+    - q: 找不到电视怎么办？
+      a: 确认电视已开机，并和 iPhone 连接同一个 Wi-Fi（访客网络常会阻止设备互连）；在 iOS“设置 > 隐私与安全性 > 本地网络”中打开 Loungemote。仍找不到时，可在 App 中按 IP 地址添加电视。
+    - q: 能用手机开机吗？
+      a: 很多电视可以。先在电视上打开网络唤醒设置，例如三星的 Power On with Mobile、LG 的 Turn on via Wi-Fi、Roku TV 的 Fast TV start。
+    - q: Loungemote 收集哪些数据？
+      a: 不收集个人数据。没有账号和广告，遥控指令直接从 iPhone 发到电视。为了解哪些电视能顺利连接并修复崩溃，App 会向 Google Analytics for Firebase 和 Firebase Crashlytics 发送匿名使用统计和崩溃报告，不包含电视名称、网络地址、输入的文字或投放的内容，可在“设置 > 隐私 > 共享使用数据”中关闭。
+    - q: 支持 iPad 和中文吗？
+      a: 支持。Loungemote 为 iPad 提供分栏布局，需要 iOS 17 或 iPadOS 17 及以上版本。App 支持简体中文、繁体中文、英语、日语、韩语、德语、法语、西班牙语、葡萄牙语（巴西）、俄语和印尼语。
+cta:
+  title: 把遥控器收起来吧。
+  live: Loungemote 可在 iPhone 和 iPad 上免费下载。
+  soon: Loungemote 即将在 iPhone 和 iPad 上免费提供。
+  meta: 需要 iOS 17 或 iPadOS 17 及以上版本。

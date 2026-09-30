@@ -1,14 +1,15 @@
 title: Loungemote
 tagline: One remote for every TV at home
+# The home page title is `seo_title` in index.html; other pages use "Title · Loungemote".
 description: >-
-  Loungemote turns your iPhone and iPad into a fast, private Wi-Fi remote for Roku, Samsung, LG,
-  Google TV, Fire TV and more. No account, no ads, no tracking.
+  TV remote app for iPhone and iPad. Control Samsung, LG, Roku, Fire TV, Google TV, Vizio,
+  Sony and more over Wi-Fi. No IR blaster, no account, no ads. Try Pro free for 3 days.
 lang: en
 
 # Every contact link uses this address. It must match `supportEmail` in the app's Links.swift.
 email: loungemote@outlook.com
 # Shown on the Privacy Policy and the Terms of Use. Change it whenever one of them changes.
-effective_date: November 30, 2026
+effective_date: October 1, 2026
 
 # Leave empty until the app is live. With a URL, every "Coming soon" badge becomes a download link.
 app_store_url: ""
@@ -30,9 +31,17 @@ theme: null
 plugins:
   - jekyll-sitemap
 
+# One page per TV platform (_remotes/). Each file's name is its URL, for example /samsung-tv-remote/.
+collections:
+  remotes:
+    output: true
+    permalink: /:name/
+
 defaults:
   - scope: { path: "" }
     values: { layout: default, image: /assets/img/og.jpg }
+  - scope: { path: "", type: remotes }
+    values: { layout: remote, eyebrow: TV remote app }
 
 # Jekyll 3 replaces its default exclude list with this one, so list the Ruby files too.
 exclude:
