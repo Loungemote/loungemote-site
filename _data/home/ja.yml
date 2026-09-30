@@ -15,9 +15,10 @@ badge:
   soon_label: App Storeで近日公開
 hero:
   eyebrow: iPhone・iPad用テレビリモコン
-  title: iPhoneが、テレビのリモコンに。
+  title: iPhoneが<br><em>リモコン</em>に。
   lead: Loungemoteはテレビリモコンアプリです。ソニー、LG、Fire TV、Android TV、Google TV、ハイセンス、シャオミ、Samsung、Rokuなどのスマートテレビを Wi-Fiで操作します。赤外線アダプタもアカウントも不要、広告もありません。
   how_link: 使い方を見る
+  works_with: 対応
   trust: [3日間無料, 広告なし, アカウント不要]
   alt: Loungemoteのリモコン画面：方向キーと決定ボタン、再生キー、音量とチャンネル。
 features:
@@ -26,14 +27,11 @@ features:
   footnote: 一部の機能はテレビの機種やソフトウェアにより異なります。
   items:
     - { icon: dpad, title: 完全なリモコン, text: 方向キー、決定、戻る、ホーム、音量、チャンネル、再生操作、電源。Wi-Fi上のテレビを自動で見つけ、アプリを開くと再接続します。 }
-    - { icon: bolt, title: Wi-Fiで電源オン, text: 対応テレビなら、スタンバイ中のテレビをスマホから起動できます。 }
-    - { icon: big, title: シンプルレイアウト, text: 大きく分かりやすいボタンで、家族みんなが使えます。 }
+    - { icon: hand, title: スワイプ式タッチパッド, text: 片手でメニューを移動し、タップで決定。LGテレビではポインターも操作できます。 }
     - { icon: keyboard, title: スマホのキーボード, text: iPhoneのキーボードで検索語やログイン情報を入力。1文字ずつ選ぶ必要はありません。 }
     - { icon: grid, title: アプリをワンタップで, text: テレビのアプリを一覧にして、スマホからすぐに開けます。 }
-    - { icon: hand, title: スワイプ式タッチパッド, text: 片手でメニューを移動し、タップで決定。LGテレビではポインターも操作できます。 }
     - { icon: cast, title: テレビにキャスト, text: 写真、スライドショー、動画、ファイル、リンクをテレビ、Chromecast、Rokuへ。 }
-    - { icon: tv, title: 家中のテレビ, text: リビング、寝室、書斎のテレビを保存して、ワンタップで切り替え。 }
-    - { icon: mic, title: Siriとショートカット, text: 声でテレビの電源オン・オフ、消音、アプリの起動ができます。 }
+    - { icon: bolt, title: Wi-Fiで電源オン, text: 対応テレビなら、スタンバイ中のテレビをスマホから起動できます。 }
 how:
   title: 数秒で使い始められます。
   lead: 登録も追加機器も不要。テレビがWi-Fiにつながっていれば、準備はほぼ完了です。
@@ -57,7 +55,7 @@ devices:
     - { name: Roku, detail: Roku TVとRokuプレーヤー }
     - { name: Vizio, detail: SmartCast搭載テレビ }
 privacy:
-  title: プライバシーを最初から大切に。
+  title: <em>プライバシー</em>を最初から大切に。
   lead: リモコンがあなたのことを知る必要はありません。Loungemoteにはアカウントも専用サーバーもなく、操作はスマホからテレビへ直接届きます。
   link: プライバシーポリシー（英語）
   items:

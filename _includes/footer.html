@@ -39,7 +39,7 @@
       </nav>
     </div>
     <nav class="site-footer__legal" aria-label="Language">
-      <a href="{{ home }}" hreflang="en" lang="en"{% unless page.i18n %} aria-current="page"{% endunless %}>English</a>
+      <a href="{{ home }}" hreflang="en" lang="en"{% if page.i18n == nil or page.i18n == "en" %} aria-current="page"{% endif %}>English</a>
       {%- for lang in site.data.languages %} ·
       <a href="{{ lang.url | relative_url }}" hreflang="{{ lang.hreflang }}" lang="{{ lang.hreflang }}"{% if page.i18n == lang.i18n %} aria-current="page"{% endif %}>{{ lang.label }}</a>
       {%- endfor %}

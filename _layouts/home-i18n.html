@@ -2,8 +2,9 @@
 layout: default
 ---
 {%- comment -%}
-  A translated home page. The page sets `i18n` (a file in _data/home/), `lang`, `og_locale` and `alternates: true`.
-  Sections and ids match index.html, so the header menu works the same. Brand names stay in Latin script as in the app.
+  The home page in every language. The page sets `i18n` (a file in _data/home/; en.yml is the English page), and a
+  translated page also `lang`, `og_locale` and `alternates: true`. Every language shows the same sections from its
+  data file. Brand names stay in Latin script as in the app.
 {%- endcomment -%}
 {%- assign t = site.data.home[page.i18n] -%}
 
@@ -26,6 +27,24 @@ layout: default
   <div class="hero__stage">
     <div class="hero__halo" aria-hidden="true"></div>
     {% include phone.html screen="remote" class="phone--main" priority=true alt=t.hero.alt %}
+  </div>
+</section>
+
+{%- comment -%} Brand names stay in Latin script in every language, as in the app. {%- endcomment -%}
+{%- assign names = "Roku|Samsung|LG|Android TV|Google TV|Fire TV|Vizio|Sony|Xiaomi|Hisense|Philips|Chromecast|DLNA" | split: "|" %}
+<section class="platforms" aria-label="{{ t.hero.works_with }}">
+  <p class="platforms__label">{{ t.hero.works_with }}</p>
+  <div class="marquee" data-marquee>
+    <ul class="marquee__track">
+      {%- for name in names %}
+      <li>{{ name }}</li>
+      {%- endfor %}
+    </ul>
+    <ul class="marquee__track" aria-hidden="true">
+      {%- for name in names %}
+      <li>{{ name }}</li>
+      {%- endfor %}
+    </ul>
   </div>
 </section>
 
@@ -79,10 +98,14 @@ layout: default
       <p>{{ t.devices.lead }}</p>
     </header>
     <ul class="devices">
-      {%- for d in t.devices.items %}
+      {%- assign devices = t.devices.items | default: site.data.platforms %}
+      {%- for d in devices %}
       <li class="device" data-reveal>
-        <h3>{{ d.name }}</h3>
+        <h3>{% if d.page %}<a href="{{ d.page | relative_url }}">{{ d.name }}</a>{% else %}{{ d.name }}{% endif %}</h3>
         <p>{{ d.detail }}</p>
+        {%- if d.pairing %}
+        <span class="device__tag">{{ d.pairing }}</span>
+        {%- endif %}
       </li>
       {%- endfor %}
     </ul>

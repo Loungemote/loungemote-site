@@ -15,9 +15,10 @@ badge:
   soon_label: Bald im App Store
 hero:
   eyebrow: TV-Fernbedienung für iPhone und iPad
-  title: Dein iPhone ist die TV-Fernbedienung.
+  title: Dein iPhone ist <em>die TV-Fernbedienung</em>.
   lead: Loungemote ist eine Fernbedienungs-App für iPhone und iPad. Sie steuert Samsung, LG, Sony, Fire TV, Android TV, Google TV, Philips, Hisense, Roku und weitere Smart TVs über dein WLAN. Ohne Infrarot-Adapter, ohne Konto, ohne Werbung.
   how_link: So funktioniert's
+  works_with: Funktioniert mit
   trust: [3 Tage gratis, Keine Werbung, Kein Konto]
   alt: "Die Loungemote-Fernbedienung: Steuerkreuz mit OK-Taste, Medientasten, Lautstärke und Sender."
 features:
@@ -26,14 +27,11 @@ features:
   footnote: Einige Funktionen hängen vom TV-Modell und seiner Software ab.
   items:
     - { icon: dpad, title: Komplette Fernbedienung, text: "Steuerkreuz, OK, Zurück, Home, Lautstärke, Sender, Wiedergabe und Ein/Aus. Findet Fernseher im WLAN von selbst und verbindet sich beim Öffnen neu." }
-    - { icon: bolt, title: Einschalten per WLAN, text: Wecke einen Fernseher im Standby vom Handy aus, wenn er das unterstützt. }
-    - { icon: big, title: Einfaches Layout, text: "Große, klar beschriftete Tasten für die ganze Familie." }
+    - { icon: hand, title: Wisch-Touchpad, text: "Mit dem Daumen durch Menüs wischen und tippen für OK. Bei LG auch mit Zeiger." }
     - { icon: keyboard, title: Handytastatur, text: "Suchbegriffe und Anmeldedaten mit der iPhone-Tastatur eingeben, statt Buchstabe für Buchstabe." }
     - { icon: grid, title: Apps mit einem Tipp, text: "Alle Apps des Fernsehers auf einen Blick, direkt vom Handy öffnen." }
-    - { icon: hand, title: Wisch-Touchpad, text: "Mit dem Daumen durch Menüs wischen und tippen für OK. Bei LG auch mit Zeiger." }
     - { icon: cast, title: Auf den Fernseher streamen, text: "Fotos, Diashows, Videos, Dateien und Links auf Fernseher, Chromecast oder Roku." }
-    - { icon: tv, title: Alle Fernseher im Haus, text: "Wohnzimmer, Schlafzimmer, Büro speichern und mit einem Tipp wechseln." }
-    - { icon: mic, title: Siri und Kurzbefehle, text: "Fernseher per Sprache ein- und ausschalten, stummschalten oder Apps öffnen." }
+    - { icon: bolt, title: Einschalten per WLAN, text: Wecke einen Fernseher im Standby vom Handy aus, wenn er das unterstützt. }
 how:
   title: In Sekunden bereit.
   lead: Keine Anmeldung, keine Zusatzgeräte. Ist der Fernseher im WLAN, bist du fast fertig.
@@ -57,7 +55,7 @@ devices:
     - { name: Roku, detail: Roku TVs und Roku-Player }
     - { name: Vizio, detail: SmartCast-Fernseher }
 privacy:
-  title: Privat von Anfang an.
+  title: Privat <em>von Anfang an</em>.
   lead: Eine Fernbedienung muss nicht wissen, wer du bist. Loungemote hat keine Konten und keine eigenen Server, und Befehle gehen direkt vom Handy zum Fernseher.
   link: Datenschutzerklärung lesen (Englisch)
   items:
