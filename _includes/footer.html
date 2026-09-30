@@ -1,0 +1,41 @@
+{%- assign home = '/' | relative_url -%}
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="{{ home }}" aria-label="Loungemote home">
+          {% include logo.html id="footer" size=30 %}
+          <span>Loungemote</span>
+        </a>
+        <p>A fast, private Wi-Fi TV remote for iPhone and iPad.</p>
+      </div>
+      <nav aria-label="Product">
+        <h2>Product</h2>
+        <ul>
+          <li><a href="{{ home }}#features">Features</a></li>
+          <li><a href="{{ home }}#how-it-works">How it works</a></li>
+          <li><a href="{{ home }}#devices">Supported devices</a></li>
+          <li><a href="{{ home }}#pricing">Free and Pro</a></li>
+          <li><a href="{{ home }}#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Help">
+        <h2>Help</h2>
+        <ul>
+          <li><a href="{{ '/support/' | relative_url }}">Support</a></li>
+          <li><a href="{{ '/support/' | relative_url }}#contact">Contact</a></li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Legal">
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a></li>
+          <li><a href="{{ '/terms/' | relative_url }}">Terms of Use</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="site-footer__legal">{% include trademarks.html %}</p>
+    <p class="site-footer__legal">&copy; {{ site.time | date: "%Y" }} Loungemote. Apple, iPhone, iPad and App Store are trademarks of Apple Inc.</p>
+  </div>
+</footer>

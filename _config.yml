@@ -1,0 +1,43 @@
+title: Loungemote
+tagline: One remote for every TV at home
+description: >-
+  Loungemote turns your iPhone and iPad into a fast, private Wi-Fi remote for Roku, Samsung, LG,
+  Google TV, Fire TV and more. No account, no ads, no tracking.
+lang: en
+
+# Every contact link uses this address. It must match `supportEmail` in the app's Links.swift.
+email: support@loungemote.app
+# Shown on the Privacy Policy and the Terms of Use. Change it whenever one of them changes.
+effective_date: November 30, 2026
+
+# Leave empty until the app is live. With a URL, every "Coming soon" badge becomes a download link.
+app_store_url: ""
+# The numeric Apple ID from App Store Connect. Adds Safari's Smart App Banner on iPhone and iPad.
+app_store_id: ""
+
+# With a custom domain: set `url` to it, set `baseurl` to "", and add a CNAME file.
+url: https://loungemote.github.io
+baseurl: /loungemote-site
+
+permalink: pretty
+markdown: kramdown
+kramdown:
+  toc_levels: "2"
+
+# The site has its own layouts. Without this line GitHub Pages adds its default theme's stylesheet.
+theme: null
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default, image: /assets/img/og.jpg }
+
+# Jekyll 3 replaces its default exclude list with this one, so list the Ruby files too.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - tools/

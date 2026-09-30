@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{%- comment -%} Text pages. The table of contents is built from the page's h2 headings (kramdown gives each an id). {%- endcomment -%}
+<article class="page">
+  <header class="page__head">
+    <div class="container">
+      {%- if page.eyebrow %}
+      <p class="eyebrow">{{ page.eyebrow }}</p>
+      {%- endif %}
+      <h1>{{ page.title }}</h1>
+      {%- if page.lead %}
+      <p class="page__lead">{{ page.lead }}</p>
+      {%- endif %}
+      {%- if page.dated %}
+      <p class="page__date">Effective date: {{ site.effective_date }}</p>
+      {%- endif %}
+    </div>
+  </header>
+  <div class="container page__body">
+    <nav class="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <ol>
+        {%- assign parts = content | split: '<h2 id="' -%}
+        {%- for part in parts offset: 1 -%}
+        {%- assign heading = part | split: '</h2>' | first -%}
+        {%- assign id = heading | split: '">' | first -%}
+        {%- assign text = heading | split: '">' | last %}
+        <li><a href="#{{ id }}">{{ text }}</a></li>
+        {%- endfor %}
+      </ol>
+    </nav>
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>

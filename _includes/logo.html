@@ -1,0 +1,13 @@
+{%- comment -%} The app icon artwork (docs/design/assets/app-icon in the app repo). `id` keeps gradient ids unique per page. {%- endcomment -%}
+<svg class="logo-mark" viewBox="0 0 1024 1024" width="{{ include.size | default: 30 }}" height="{{ include.size | default: 30 }}" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="lb-{{ include.id }}" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#262A35"/><stop offset="1" stop-color="#0D0F14"/></linearGradient>
+    <linearGradient id="lr-{{ include.id }}" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#FFC98A"/><stop offset="1" stop-color="#FF7A2A"/></linearGradient>
+    <radialGradient id="lg-{{ include.id }}" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FF8A34" stop-opacity="0.55"/><stop offset="1" stop-color="#FF8A34" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#lb-{{ include.id }})"/>
+  <circle cx="512" cy="450" r="330" fill="url(#lg-{{ include.id }})"/>
+  <circle cx="512" cy="450" r="235" fill="url(#lr-{{ include.id }})"/>
+  <circle cx="512" cy="450" r="158" fill="#151820"/>
+  <path d="M225 690 Q512 860 799 690" fill="none" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="36" stroke-linecap="round"/>
+</svg>

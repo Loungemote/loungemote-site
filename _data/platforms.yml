@@ -1,0 +1,32 @@
+# Supported platforms, shown on the home page and the support page. Brand names are plain text only (no logos).
+# Keep this list in step with the app's About screen and support.md.
+- name: Roku
+  detail: Roku TVs and Roku streaming players
+  pairing: Connects directly
+- name: Samsung
+  detail: Smart TVs with Tizen, 2016 and later
+  pairing: Select Allow on the TV
+- name: LG
+  detail: Smart TVs with webOS
+  pairing: Select Allow on the TV
+- name: Android TV and Google TV
+  detail: TVs and streaming devices, including Philips sets with Google TV
+  pairing: Code on the TV
+- name: Amazon Fire TV
+  detail: Fire TV streaming devices and TVs
+  pairing: Code on the TV
+- name: Vizio
+  detail: SmartCast TVs
+  pairing: Code on the TV
+- name: Sony
+  detail: Bravia TVs
+  pairing: Code on the TV
+- name: Xiaomi
+  detail: TVs with PatchWall
+  pairing: Connects directly
+- name: Hisense
+  detail: TVs with VIDAA
+  pairing: Code on the TV
+- name: Philips
+  detail: TVs with Titan OS or Saphi
+  pairing: Code on Titan OS

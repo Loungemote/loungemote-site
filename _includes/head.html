@@ -1,0 +1,84 @@
+{%- if page.title -%}
+  {%- assign full_title = page.title | append: " · " | append: site.title -%}
+{%- else -%}
+  {%- assign full_title = site.title | append: ": " | append: site.tagline -%}
+{%- endif -%}
+{%- assign description = page.description | default: site.description | strip_newlines | strip -%}
+{%- assign canonical = page.url | replace: "index.html", "" | absolute_url -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ full_title | escape }}</title>
+<meta name="description" content="{{ description | escape }}">
+<link rel="canonical" href="{{ canonical }}">
+{%- if page.noindex %}
+<meta name="robots" content="noindex">
+{%- endif %}
+<meta name="theme-color" content="#07080C">
+<meta name="color-scheme" content="dark">
+{%- if site.app_store_id and site.app_store_id != "" %}
+<meta name="apple-itunes-app" content="app-id={{ site.app_store_id }}">
+{%- endif %}
+
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ full_title | escape }}">
+<meta property="og:description" content="{{ description | escape }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ page.image | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Loungemote, a TV remote app, shown on an iPhone.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ full_title | escape }}">
+<meta name="twitter:description" content="{{ description | escape }}">
+<meta name="twitter:image" content="{{ page.image | absolute_url }}">
+
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="48x48">
+<link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+<link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+{%- if page.preload_image %}
+<link rel="preload" as="image" href="{{ page.preload_image | relative_url }}" type="image/webp" fetchpriority="high">
+{%- endif %}
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}">
+<script>document.documentElement.classList.add("js")</script>
+{%- if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "{{ site.title }}",
+      "url": "{{ '/' | absolute_url }}"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "{{ site.title }}",
+      "description": {{ description | jsonify }},
+      "url": "{{ '/' | absolute_url }}",
+      "image": "{{ '/assets/img/icon-512.png' | absolute_url }}",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "iOS 17.0 or later, iPadOS 17.0 or later",
+      {%- if site.app_store_url and site.app_store_url != "" %}
+      "downloadUrl": "{{ site.app_store_url }}",
+      {%- endif %}
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- for item in site.data.faq %}
+        {
+          "@type": "Question",
+          "name": {{ item.q | jsonify }},
+          "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | markdownify | strip_html | strip_newlines | strip | jsonify }} }
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }
+  ]
+}
+</script>
+{%- endif %}

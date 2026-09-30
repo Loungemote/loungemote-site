@@ -1,0 +1,51 @@
+# Home page FAQ. Answers are Markdown. The same list feeds the FAQPage structured data in _includes/head.html.
+- q: Is Loungemote free?
+  a: >-
+    Yes. The full button remote for one TV is free, and it has no ads. Loungemote Pro adds the touchpad, the phone
+    keyboard, the app launcher, more TVs, Siri and Shortcuts, and casting of slideshows, videos, files and links.
+    Pro is a weekly or yearly subscription, or a one-time lifetime purchase. The app shows the price before you buy.
+
+- q: Which TVs and streaming devices work with Loungemote?
+  a: >-
+    Roku TVs and players, Samsung smart TVs (Tizen, 2016 and later), LG smart TVs (webOS), Android TV and Google TV
+    devices, Amazon Fire TV, Vizio SmartCast, Sony Bravia, Xiaomi TVs (PatchWall), Hisense TVs with VIDAA, and Philips
+    TVs with Titan OS or Saphi. Apple TV is not supported. Some features depend on the TV model and its software.
+
+- q: Do I need an account or extra hardware?
+  a: >-
+    No. There is no sign-up and nothing to plug in. Loungemote talks to your TV over the Wi-Fi network you already
+    have.
+
+- q: Why does the app ask for Local Network access?
+  a: >-
+    iOS requires this permission before an app can talk to other devices on your network. Loungemote uses it to find
+    your TVs, send remote commands, turn a TV on, and send the photos and videos that you choose to cast. Without it,
+    the app cannot reach your TV.
+
+- q: Can I control my TV when I'm away from home?
+  a: >-
+    No. Your iPhone and your TV must be on the same local network. Commands go directly from your phone to your TV
+    and do not pass through a server.
+
+- q: Can Loungemote turn my TV on?
+  a: >-
+    On many TVs, yes. The app sends a wake signal over your network. Most TVs need a setting turned on first, for
+    example **Power On with Mobile** on Samsung or **Turn on via Wi-Fi** on LG. The [support page](support/) lists the
+    settings.
+
+- q: What data does Loungemote collect?
+  a: >-
+    None. There are no accounts, no analytics and no ads, and we run no servers for the app. Your saved TVs and
+    pairing keys stay on your iPhone. The one exception is casting to a Google Cast device, where Google's Cast SDK
+    sends Google diagnostic data that is not linked to you. The [privacy policy](privacy/) has the details.
+
+- q: Does it work on iPad, and in my language?
+  a: >-
+    Yes. Loungemote has a split-view layout for iPad and needs iOS 17 or iPadOS 17 or later. The app is available in
+    English, Chinese (Simplified and Traditional), French, German, Indonesian, Japanese, Korean, Portuguese (Brazil),
+    Russian and Spanish.
+
+- q: How do I cancel Loungemote Pro or ask for a refund?
+  a: >-
+    Subscriptions are managed by Apple. Open **Settings > [your name] > Subscriptions** on your iPhone and select
+    Loungemote. For refunds, go to [reportaproblem.apple.com](https://reportaproblem.apple.com).

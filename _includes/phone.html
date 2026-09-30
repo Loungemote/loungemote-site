@@ -1,0 +1,10 @@
+{%- comment -%}
+  An app screen in a CSS device frame. Usage:
+  {% include phone.html screen="remote" alt="…" class="phone--main" priority=true %}
+  Screens are assets/img/screens/*.webp (780 × 1688), rendered by tools/render_assets.py.
+{%- endcomment -%}
+<div class="phone{% if include.class %} {{ include.class }}{% endif %}">
+  <div class="phone__screen">
+    <img src="{{ '/assets/img/screens/' | append: include.screen | append: '.webp' | relative_url }}" alt="{{ include.alt }}" width="780" height="1688"{% if include.priority %} fetchpriority="high"{% elsif include.eager %}{% else %} loading="lazy"{% endif %} decoding="async">
+  </div>
+</div>
