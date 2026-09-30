@@ -1,0 +1,33 @@
+---
+layout: page
+---
+{%- comment -%}
+  One TV platform (_remotes/*.md). The file's Markdown is the guide; this layout adds the platform's FAQ
+  (front matter `faq`, also the FAQPage structured data in head.html), links to the other platforms and the download.
+{%- endcomment -%}
+{{ content }}
+
+{%- if page.faq %}
+<h2 id="questions">Questions about {{ page.brand }}</h2>
+{%- for item in page.faq %}
+<h3>{{ item.q }}</h3>
+{{ item.a | markdownify }}
+{%- endfor %}
+{%- endif %}
+
+<h2 id="download">Get Loungemote</h2>
+<p>{% if site.app_store_url and site.app_store_url != "" %}Loungemote is a free download for iPhone and iPad.{% else %}Loungemote will be a free download for iPhone and iPad.{% endif %} The button remote for one TV is free, with no ads. It needs iOS 17 or iPadOS 17 or later.</p>
+<p>{% include store-badge.html %}</p>
+
+<h2 id="other-tvs">Other TVs</h2>
+<ul>
+  {%- for p in site.data.platforms %}
+  {%- unless p.page == page.url %}
+  <li><a href="{{ p.page | relative_url }}">{{ p.name }}</a>: {{ p.detail }}</li>
+  {%- endunless %}
+  {%- endfor %}
+</ul>
+<p>More help is on the <a href="{{ '/support/' | relative_url }}">support page</a>.</p>
+
+<hr>
+<p><small>{% include trademarks.html %}</small></p>

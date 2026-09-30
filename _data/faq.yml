@@ -1,15 +1,22 @@
 # Home page FAQ. Answers are Markdown. The same list feeds the FAQPage structured data in _includes/head.html.
 - q: Is Loungemote free?
   a: >-
-    Yes. The full button remote for one TV is free, and it has no ads. Loungemote Pro adds the touchpad, the phone
-    keyboard, the app launcher, more TVs, Siri and Shortcuts, and casting of slideshows, videos, files and links.
-    Pro is a weekly or yearly subscription, or a one-time lifetime purchase. The app shows the price before you buy.
+    Downloading, setup and the Demo TV are free, and there are no ads. Controlling your TV needs Loungemote Pro: the
+    full remote, the touchpad, the phone keyboard, the app launcher, Siri and Shortcuts, and casting of photos, videos,
+    files and links. Pro is a weekly subscription with a 3-day free trial for new subscribers, a yearly subscription,
+    or a one-time lifetime purchase. The app shows the price before you buy.
 
 - q: Which TVs and streaming devices work with Loungemote?
   a: >-
     Roku TVs and players, Samsung smart TVs (Tizen, 2016 and later), LG smart TVs (webOS), Android TV and Google TV
     devices, Amazon Fire TV, Vizio SmartCast, Sony Bravia, Xiaomi TVs (PatchWall), Hisense TVs with VIDAA, and Philips
-    TVs with Titan OS or Saphi. Apple TV is not supported. Some features depend on the TV model and its software.
+    TVs with Titan OS or Saphi. Roku TV and Google TV models from other brands, such as TCL, work too. Apple TV and
+    infrared-only TVs are not supported. Some features depend on the TV model and its software.
+
+- q: Do I need an IR blaster or a universal remote?
+  a: >-
+    No. Loungemote controls smart TVs over your home Wi-Fi, using each TV's own network protocol. It does not use
+    infrared, so it cannot control older TVs that only accept an infrared remote.
 
 - q: Do I need an account or extra hardware?
   a: >-
@@ -35,9 +42,11 @@
 
 - q: What data does Loungemote collect?
   a: >-
-    None. There are no accounts, no analytics and no ads, and we run no servers for the app. Your saved TVs and
-    pairing keys stay on your iPhone. The one exception is casting to a Google Cast device, where Google's Cast SDK
-    sends Google diagnostic data that is not linked to you. The [privacy policy](privacy/) has the details.
+    No personal data. There are no accounts and no ads, and remote commands go straight from your iPhone to your
+    TV. To see which TVs connect and to fix crashes, the app sends anonymous usage statistics and crash reports to
+    Google Analytics for Firebase and Firebase Crashlytics. They never include TV names, network addresses, text you
+    type or what you cast, and you can turn them off in **Settings > Privacy > Share Usage Data**. Casting to a
+    Google Cast device also sends Google diagnostic data. The [privacy policy](privacy/) has the details.
 
 - q: Does it work on iPad, and in my language?
   a: >-

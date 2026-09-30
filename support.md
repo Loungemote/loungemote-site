@@ -71,7 +71,7 @@ Apple handles all refunds. To ask for one, go to [reportaproblem.apple.com](http
 
 ## Privacy and terms
 
-Loungemote collects no personal data. Read the [Privacy Policy]({{ '/privacy/' | relative_url }}) and the [Terms of Use]({{ '/terms/' | relative_url }}).
+Loungemote has no accounts and no ads, and remote commands stay on your local network. Anonymous usage statistics and crash reports help us fix problems, and you can turn them off in **Settings > Privacy > Share Usage Data**. Read the [Privacy Policy]({{ '/privacy/' | relative_url }}) and the [Terms of Use]({{ '/terms/' | relative_url }}).
 
 ---
 

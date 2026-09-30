@@ -1,0 +1,38 @@
+---
+layout: null
+---
+{%- comment -%} A plain summary for AI assistants and search tools (llmstxt.org). Keep it in step with the home page. {%- endcomment -%}
+# Loungemote
+
+> Loungemote is a TV remote app for iPhone and iPad. It controls smart TVs and streaming devices over the home Wi-Fi network, with no infrared blaster, no account and no ads. Setup, a first key press to check the connection, and the Demo TV are free; controlling a TV needs Loungemote Pro, an in-app purchase whose weekly plan starts with a 3-day free trial for new subscribers.
+
+## Key facts
+
+- Platforms: iPhone and iPad, iOS 17 or iPadOS 17 or later. {% if site.app_store_url and site.app_store_url != "" %}App Store: {{ site.app_store_url }}{% else %}Not yet released on the App Store.{% endif %}
+- Supported TVs: Samsung smart TVs with Tizen (2016 and later), LG webOS TVs, Roku TVs and Roku players, Android TV and Google TV devices (including Chromecast with Google TV), Amazon Fire TV, Vizio SmartCast, Sony Bravia, Xiaomi TVs with PatchWall, Hisense TVs with VIDAA, and Philips TVs with Titan OS or Saphi. Roku TV and Google TV models from other brands, such as TCL, work too.
+- Not supported: Apple TV, infrared-only TVs, casting to Fire TV, and control from outside the home network.
+- How it works: the iPhone and the TV must be on the same Wi-Fi network. The app finds TVs automatically; Samsung and LG TVs ask the user to select Allow once, and Android TV, Google TV, Fire TV, Vizio, Sony, Hisense and Philips Titan OS TVs show a code to type once. Roku, Xiaomi and Philips Saphi need no pairing.
+- Free: finding and pairing TVs, a first key press to check that the TV responds, and the Demo TV with every feature unlocked.
+- Loungemote Pro (weekly subscription with a 3-day free trial for new subscribers, yearly subscription, or one-time lifetime purchase): directional pad, OK, Back, Home, volume, mute, channels, playback and power keys; turning the TV on over Wi-Fi (Wake-on-LAN) on TVs that support it; input switching on LG, Sony, Vizio and Hisense; a simple layout with big buttons; phone keyboard, apps in one tap, swipe touchpad (with the pointer on LG), casting photos, slideshows, videos, files and links to TVs, Chromecast, Roku and DLNA devices, Siri and Shortcuts, and the iPad layout.
+- Privacy: no account, no ads, no advertising identifier, and no servers of its own. Remote commands go directly from the iPhone to the TV. The app sends anonymous usage statistics and crash reports to Google Analytics for Firebase and Firebase Crashlytics, never including TV names, network addresses, typed text or cast content; users can turn this off in Settings > Privacy > Share Usage Data.
+- Languages: English, Chinese (Simplified and Traditional), Japanese, Korean, German, French, Spanish, Portuguese (Brazil), Russian and Indonesian.
+- Loungemote is an independent app, not affiliated with or endorsed by the TV makers named here.
+
+## Pages
+
+- [Home]({{ '/' | absolute_url }}): features, supported devices, FAQ
+{%- for p in site.data.platforms %}
+- [{{ p.name }}]({{ p.page | absolute_url }}): {{ p.detail }}, setup and power-on
+{%- endfor %}
+- [Support]({{ '/support/' | absolute_url }}): discovery, pairing and power-on fixes, purchases, contact
+- [Privacy Policy]({{ '/privacy/' | absolute_url }})
+- [Terms of Use]({{ '/terms/' | absolute_url }})
+
+## Other languages
+{% for lang in site.data.languages %}
+- [{{ lang.label }}]({{ lang.url | absolute_url }})
+{%- endfor %}
+
+## Contact
+
+{{ site.email }}

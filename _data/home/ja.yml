@@ -1,0 +1,91 @@
+# Japanese home page (/ja/). Facts follow index.html and the App Store copy (docs/app-store/metadata.json).
+title: Loungemote - テレビリモコンアプリ｜ソニー・LG・Fire TV対応
+description: iPhoneとiPadで使えるテレビリモコンアプリ。Proは3日間無料で試せます。ソニー ブラビア、LG、Fire TV、Google TV、ハイセンス、シャオミ、Samsungなどを Wi-Fiで操作。赤外線もアカウントも不要。
+nav:
+  features: 機能
+  how: 使い方
+  devices: 対応テレビ
+  privacy: プライバシー
+  faq: よくある質問
+  support: サポート
+  get: アプリを入手
+badge:
+  small: ダウンロード
+  soon: 近日公開
+  soon_label: App Storeで近日公開
+hero:
+  eyebrow: iPhone・iPad用テレビリモコン
+  title: 家じゅうのテレビを、スマホひとつで。
+  lead: Loungemoteはテレビリモコンアプリです。ソニー、LG、Fire TV、Android TV、Google TV、ハイセンス、シャオミ、Samsung、Rokuなどのスマートテレビを Wi-Fiで操作します。赤外線アダプタもアカウントも不要、広告もありません。
+  how_link: 使い方を見る
+  trust: [3日間無料, 広告なし, アカウント不要]
+  alt: Loungemoteのリモコン画面：方向キーと決定ボタン、再生キー、音量とチャンネル。
+features:
+  title: いつものリモコン操作を、すべてスマホで。
+  lead: ボタン操作のリモコンに加えて、タッチパッド、スマホのキーボード、アプリ起動、キャストまで。
+  footnote: 一部の機能はテレビの機種やソフトウェアにより異なります。
+  items:
+    - { icon: dpad, title: 完全なリモコン, text: 方向キー、決定、戻る、ホーム、音量、チャンネル、再生操作、電源。Wi-Fi上のテレビを自動で見つけ、アプリを開くと再接続します。 }
+    - { icon: bolt, title: Wi-Fiで電源オン, text: 対応テレビなら、スタンバイ中のテレビをスマホから起動できます。 }
+    - { icon: big, title: シンプルレイアウト, text: 大きく分かりやすいボタンで、家族みんなが使えます。 }
+    - { icon: keyboard, title: スマホのキーボード, text: iPhoneのキーボードで検索語やログイン情報を入力。1文字ずつ選ぶ必要はありません。 }
+    - { icon: grid, title: アプリをワンタップで, text: テレビのアプリを一覧にして、スマホからすぐに開けます。 }
+    - { icon: hand, title: スワイプ式タッチパッド, text: 片手でメニューを移動し、タップで決定。LGテレビではポインターも操作できます。 }
+    - { icon: cast, title: テレビにキャスト, text: 写真、スライドショー、動画、ファイル、リンクをテレビ、Chromecast、Rokuへ。 }
+    - { icon: tv, title: 家中のテレビ, text: リビング、寝室、書斎のテレビを保存して、ワンタップで切り替え。 }
+    - { icon: mic, title: Siriとショートカット, text: 声でテレビの電源オン・オフ、消音、アプリの起動ができます。 }
+how:
+  title: 数秒で使い始められます。
+  lead: 登録も追加機器も不要。テレビがWi-Fiにつながっていれば、準備はほぼ完了です。
+  steps:
+    - { screen: choose-tv, title: Wi-Fiでアプリを開く, text: Loungemoteがネットワークを探して、見つかったテレビやストリーミング端末を表示します。, alt: テレビを選択：このWi-Fiで見つかったテレビ。 }
+    - { screen: pair, title: テレビで一度だけ許可, text: テレビで「許可」を選ぶか、表示されたコードを入力します。初回だけです。, alt: テレビとのペアリング：テレビがこのiPhoneを信頼するか確認しています。 }
+    - { screen: remote, title: 操作を始める, text: スマホがリモコンになりました。次回からはアプリを開くと自動で再接続します。, alt: リビングのテレビに接続したリモコン画面。 }
+devices:
+  title: 10のテレビプラットフォームに、ひとつのアプリで。
+  lead: Loungemoteは各テレビのネットワーク通信で操作するため、赤外線アダプタやハブは不要です。iPhoneとテレビが同じWi-Fiにあれば使えます。
+  footnote: TCLなど他ブランドのRoku TVやGoogle TV搭載モデルにも対応します。Fire TVへのキャストには対応していません。Apple TVと赤外線操作のみのテレビには対応していません。
+  items:
+    - { name: ソニー Sony, detail: ブラビア }
+    - { name: LG, detail: webOS搭載スマートテレビ }
+    - { name: Amazon Fire TV, detail: Fire TV Stick、Fire TV Cube、Fire TV搭載テレビ }
+    - { name: Android TV・Google TV, detail: テレビとストリーミング端末（Chromecast with Google TVを含む） }
+    - { name: ハイセンス Hisense, detail: VIDAA搭載テレビ }
+    - { name: シャオミ Xiaomi, detail: PatchWall搭載テレビ }
+    - { name: Samsung, detail: Tizen搭載スマートテレビ（2016年以降） }
+    - { name: フィリップス Philips, detail: Titan OS・Saphi搭載テレビ }
+    - { name: Roku, detail: Roku TVとRokuプレーヤー }
+    - { name: Vizio, detail: SmartCast搭載テレビ }
+privacy:
+  title: プライバシーを最初から大切に。
+  lead: リモコンがあなたのことを知る必要はありません。Loungemoteにはアカウントも専用サーバーもなく、操作はスマホからテレビへ直接届きます。
+  link: プライバシーポリシー（英語）
+  items:
+    - { icon: useroff, title: アカウント不要, text: 登録もメールアドレスもログインもありません。 }
+    - { icon: eyeoff, title: 広告なし, text: 広告コードも広告識別子も使いません。 }
+    - { icon: wifi, title: ご家庭のネットワーク内で, text: 操作はWi-Fiで選んだテレビへ直接送られます。 }
+    - { icon: lock, title: 鍵はiPhoneに, text: ペアリング情報はiOSのキーチェーンに保存され、私たちには送られません。 }
+  note: 接続しやすいテレビの把握と不具合の修正のため、匿名の利用統計とクラッシュレポートをGoogle（Firebase）に送信します。テレビ名、ネットワークアドレス、入力した文字、キャストした内容は一切含まれず、「設定 > プライバシー > 使用状況データを共有」でオフにできます。Google Castデバイスへキャストすると、GoogleのCast SDKも診断データをGoogleに送信します。
+faq:
+  title: よくある質問
+  more: ほかにご質問があれば、こちらへメールでどうぞ：
+  items:
+    - q: Loungemoteは無料ですか？
+      a: ダウンロード、設定、デモテレビは無料で、広告もありません。テレビの操作にはLoungemote Proが必要です。Proではボタン操作のリモコン、タッチパッド、スマホのキーボード、アプリ起動、Siriとショートカット、写真・動画・ファイル・リンクのキャストが使えます。Proは週額（新規の方は3日間無料）・年額サブスクリプションまたは買い切りです。
+    - q: どのテレビに対応していますか？
+      a: ソニー ブラビア、LG（webOS）、Amazon Fire TV、Android TVとGoogle TVの端末、ハイセンス（VIDAA）、シャオミ（PatchWall）、Samsung（Tizen、2016年以降）、フィリップス（Titan OS、Saphi）、Roku、Vizio SmartCast。TCLなどのRoku TVやGoogle TV搭載モデルにも対応します。Apple TVと赤外線操作のみのテレビには対応していません。
+    - q: 赤外線アダプタや学習リモコンは必要ですか？
+      a: 不要です。Loungemoteはご家庭のWi-Fiでスマートテレビを操作します。赤外線は使わないため、赤外線リモコンでしか操作できない古いテレビには使えません。
+    - q: テレビが見つからないときは？
+      a: テレビの電源が入っていて、iPhoneと同じWi-Fiにつながっているか確認してください（ゲストネットワークでは機器同士がつながらないことがあります）。iOSの「設定 > プライバシーとセキュリティ > ローカルネットワーク」でLoungemoteをオンにします。それでも見つからない場合は、アプリでIPアドレスを入力して追加できます。
+    - q: スマホでテレビの電源を入れられますか？
+      a: 多くのテレビで可能です。先にテレビでネットワーク経由の起動設定をオンにしてください。例：SamsungのPower On with Mobile、LGのTurn on via Wi-Fi、Roku TVのFast TV start。
+    - q: どんなデータを収集しますか？
+      a: 個人データは収集しません。アカウントも広告もなく、操作はiPhoneからテレビへ直接届きます。接続しやすいテレビの把握とクラッシュの修正のため、匿名の利用統計とクラッシュレポートをGoogle Analytics for FirebaseとFirebase Crashlyticsに送信します。テレビ名、ネットワークアドレス、入力した文字、キャストした内容は含まれず、「設定 > プライバシー > 使用状況データを共有」でオフにできます。
+    - q: iPadと日本語に対応していますか？
+      a: はい。iPad向けの分割レイアウトがあり、iOS 17またはiPadOS 17以降が必要です。アプリは日本語、英語、中国語（簡体字・繁体字）、韓国語、ドイツ語、フランス語、スペイン語、ポルトガル語（ブラジル）、ロシア語、インドネシア語に対応しています。
+cta:
+  title: リモコンは、もう探さなくていい。
+  live: LoungemoteはiPhoneとiPadで無料ダウンロードできます。
+  soon: LoungemoteはまもなくiPhoneとiPad向けに無料で公開されます。
+  meta: iOS 17またはiPadOS 17以降が必要です。

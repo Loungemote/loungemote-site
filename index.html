@@ -1,6 +1,8 @@
 ---
 layout: default
 body_class: home
+seo_title: "Loungemote: TV Remote App for Samsung, LG, Roku & Fire TV"
+alternates: true
 preload_image: /assets/img/screens/remote.webp
 ---
 {%- assign names = "Roku|Samsung|LG|Android TV|Google TV|Fire TV|Vizio|Sony|Xiaomi|Hisense|Philips|Chromecast|DLNA" | split: "|" -%}
@@ -10,14 +12,14 @@ preload_image: /assets/img/screens/remote.webp
   <div class="container hero__inner">
     <p class="eyebrow hero__eyebrow"><span class="dot" aria-hidden="true"></span>TV remote for iPhone and iPad</p>
     <h1 class="hero__title">One remote for <em>every&nbsp;TV</em> at&nbsp;home.</h1>
-    <p class="hero__lead">Loungemote turns your iPhone into a fast, private remote for the smart TVs and streaming devices on your Wi&#8209;Fi. No account, no ads, no extra hardware.</p>
+    <p class="hero__lead">Loungemote is a TV remote app for iPhone and iPad. It controls Samsung, LG, Roku, Fire TV, Android TV, Google TV, Vizio, Sony and other smart TVs over your Wi&#8209;Fi. No infrared blaster, no account, no ads.</p>
     <div class="hero__actions">
       {% include store-badge.html %}
       <a class="button button--ghost" href="#how-it-works">See how it works {% include icon.html name="arrow" %}</a>
     </div>
-    <ul class="hero__trust" aria-label="Privacy promises">
+    <ul class="hero__trust" aria-label="Promises">
+      <li>{% include icon.html name="check" %}3 days free</li>
       <li>{% include icon.html name="check" %}No ads</li>
-      <li>{% include icon.html name="check" %}No tracking</li>
       <li>{% include icon.html name="check" %}No account</li>
     </ul>
   </div>
@@ -50,14 +52,14 @@ preload_image: /assets/img/screens/remote.webp
     <header class="section__head" data-reveal>
       <p class="eyebrow">Features</p>
       <h2>Everything your remote does. <span class="muted">And the things it never could.</span></h2>
-      <p>The complete button remote is free. Loungemote Pro adds the comforts that make you put the old remote away.</p>
+      <p>The full button remote, plus a touchpad, your phone&rsquo;s keyboard, apps in one tap and casting. Everything that makes you put the old remote away.</p>
     </header>
 
     <div class="bento">
       <article class="card card--wide card--feature" data-reveal>
         <div class="card__body">
           <span class="card__icon">{% include icon.html name="dpad" %}</span>
-          <h3>A full remote, free</h3>
+          <h3>A full remote</h3>
           <p>Directional pad, OK, Back and Home, volume and channels, media keys, a number pad and power. Press and hold to repeat, with a haptic tap for every key.</p>
           <ul class="ticks">
             <li>{% include icon.html name="check" %}Finds the TVs on your Wi-Fi by itself</li>
@@ -78,31 +80,31 @@ preload_image: /assets/img/screens/remote.webp
 
       <article class="card" data-reveal>
         <span class="card__icon">{% include icon.html name="hand" %}</span>
-        <h3>Swipe touchpad <span class="pro">Pro</span></h3>
+        <h3>Swipe touchpad</h3>
         <p>Glide through menus with your thumb and tap for OK. You never have to look down at your phone.</p>
       </article>
 
       <article class="card" data-reveal>
         <span class="card__icon">{% include icon.html name="keyboard" %}</span>
-        <h3>Phone keyboard <span class="pro">Pro</span></h3>
+        <h3>Phone keyboard</h3>
         <p>Type searches and passwords with your iPhone keyboard, or dictate them. No more hunting for letters.</p>
       </article>
 
       <article class="card" data-reveal>
         <span class="card__icon">{% include icon.html name="grid" %}</span>
-        <h3>Apps in one tap <span class="pro">Pro</span></h3>
+        <h3>Apps in one tap</h3>
         <p>Every app on your TV in one grid, with your favorites up front. Open one without touching the home screen.</p>
       </article>
 
       <article class="card" data-reveal>
         <span class="card__icon">{% include icon.html name="cast" %}</span>
         <h3>Cast to the big screen</h3>
-        <p>Send a photo to the TV for free. Pro adds slideshows, videos, files, web links and playlists.</p>
+        <p>Send photos, slideshows, videos, files, web links and playlists to the TV.</p>
       </article>
 
       <article class="card" data-reveal>
         <span class="card__icon">{% include icon.html name="tv" %}</span>
-        <h3>Every TV at home <span class="pro">Pro</span></h3>
+        <h3>Every TV at home</h3>
         <p>Save the living room, the bedroom and the office. Switch between them in a tap, each with its live status.</p>
       </article>
 
@@ -120,7 +122,7 @@ preload_image: /assets/img/screens/remote.webp
 
       <article class="card" data-reveal>
         <span class="card__icon">{% include icon.html name="mic" %}</span>
-        <h3>Siri and Shortcuts <span class="pro">Pro</span></h3>
+        <h3>Siri and Shortcuts</h3>
         <p>Ask Siri to turn the TV on, mute it or open an app, or build the TV into your own shortcuts.</p>
       </article>
     </div>
@@ -140,7 +142,7 @@ preload_image: /assets/img/screens/remote.webp
   <div class="container">
     <div class="showcase" data-reveal>
       <div class="showcase__copy">
-        <p class="eyebrow">Keyboard <span class="pro">Pro</span></p>
+        <p class="eyebrow">Keyboard</p>
         <h2>Type with your <em>iPhone keyboard</em>.</h2>
         <p>Search for a show or sign in to an app without stepping through an on-screen keyboard one letter at a time. The text appears on the TV as you type.</p>
         <ul class="ticks">
@@ -161,8 +163,8 @@ preload_image: /assets/img/screens/remote.webp
         <h2>Cast to the <em>big screen</em>.</h2>
         <p>Show the photos on your iPhone to the whole room. Your files go straight to the TV over your Wi-Fi. Nothing is uploaded.</p>
         <ul class="ticks">
-          <li>{% include icon.html name="check" %}One photo at a time, free</li>
-          <li>{% include icon.html name="check" %}Slideshows, videos, files and web links with Pro</li>
+          <li>{% include icon.html name="check" %}Photos one at a time or as a slideshow</li>
+          <li>{% include icon.html name="check" %}Videos, files and web links too</li>
           <li>{% include icon.html name="check" %}Works with your TVs, Chromecast and DLNA devices</li>
         </ul>
       </div>
@@ -174,7 +176,7 @@ preload_image: /assets/img/screens/remote.webp
 
     <div class="showcase" data-reveal>
       <div class="showcase__copy">
-        <p class="eyebrow">All your TVs <span class="pro">Pro</span></p>
+        <p class="eyebrow">All your TVs</p>
         <h2>Switch TVs <em>in a tap</em>.</h2>
         <p>Every TV at home in one list, each with its status. Pick another room and the remote is ready before you sit down.</p>
         <ul class="ticks">
@@ -279,13 +281,13 @@ preload_image: /assets/img/screens/remote.webp
     <ul class="devices">
       {%- for p in site.data.platforms %}
       <li class="device" data-reveal>
-        <h3>{{ p.name }}</h3>
+        <h3><a href="{{ p.page | relative_url }}">{{ p.name }}</a></h3>
         <p>{{ p.detail }}</p>
         <span class="device__tag">{{ p.pairing }}</span>
       </li>
       {%- endfor %}
     </ul>
-    <p class="footnote" data-reveal>Casting works on every supported platform except Fire TV, and on Chromecast and DLNA devices. Apple TV is not supported. <a href="{{ '/support/' | relative_url }}#supported-devices">See the full device notes</a>.</p>
+    <p class="footnote" data-reveal>Roku TV and Google TV models from other brands, such as TCL, work too. Casting works on every supported platform except Fire TV, and on Chromecast and DLNA devices. Apple TV and infrared-only TVs are not supported. Select a platform for its setup guide, or <a href="{{ '/support/' | relative_url }}#supported-devices">see the full device notes</a>.</p>
   </div>
 </section>
 
@@ -295,7 +297,7 @@ preload_image: /assets/img/screens/remote.webp
       <div class="privacy__copy">
         <p class="eyebrow">Privacy</p>
         <h2>Private <em>by design</em>.</h2>
-        <p>A remote has no reason to know who you are. Loungemote has no accounts and no servers, and your key presses go from your phone to your TV and nowhere else.</p>
+        <p>A remote has no reason to know who you are. Loungemote has no accounts and no servers of its own, and remote commands go straight from your phone to your TV.</p>
         <a class="button button--ghost" href="{{ '/privacy/' | relative_url }}">Read the privacy policy {% include icon.html name="arrow" %}</a>
       </div>
       <ul class="privacy__list">
@@ -305,7 +307,7 @@ preload_image: /assets/img/screens/remote.webp
         </li>
         <li>
           <span class="card__icon card__icon--green">{% include icon.html name="eyeoff" %}</span>
-          <div><h3>No ads, no tracking</h3><p>The app contains no advertising or analytics code.</p></div>
+          <div><h3>No ads, no ad tracking</h3><p>No advertising code and no advertising identifier. Nothing you do is linked to you.</p></div>
         </li>
         <li>
           <span class="card__icon card__icon--green">{% include icon.html name="wifi" %}</span>
@@ -316,49 +318,11 @@ preload_image: /assets/img/screens/remote.webp
           <div><h3>Keys stay on your iPhone</h3><p>Pairing data is kept in the iOS Keychain and never sent to us.</p></div>
         </li>
       </ul>
-      <p class="privacy__note">One exception, stated plainly: when you cast to a Google Cast device, Google's Cast SDK sends Google diagnostic data that is not linked to you. It starts only when you use casting.</p>
+      <p class="privacy__note">Stated plainly: the app sends anonymous usage statistics and crash reports to Google (Firebase) so we can see which TVs connect and fix problems. It never sends TV names, network addresses, what you type or what you cast, and you can turn it off in <strong>Settings &gt; Privacy &gt; Share Usage Data</strong>. When you cast to a Google Cast device, Google's Cast SDK also sends Google diagnostic data. <a href="{{ '/privacy/' | relative_url }}#usage-data-and-crash-reports">Details</a>.</p>
     </div>
   </div>
 </section>
 
-<section class="section" id="pricing">
-  <div class="container">
-    <header class="section__head section__head--center" data-reveal>
-      <p class="eyebrow">Free and Pro</p>
-      <h2>A complete remote, free.</h2>
-      <p>Free is not a demo. Pro adds speed and comfort when you want them.</p>
-    </header>
-    <div class="plans">
-      <article class="plan" data-reveal>
-        <h3>Free</h3>
-        <p class="plan__lead">Everything you need to control one TV.</p>
-        <ul class="ticks">
-          <li>{% include icon.html name="check" %}The full button remote</li>
-          <li>{% include icon.html name="check" %}Automatic discovery and guided pairing</li>
-          <li>{% include icon.html name="check" %}Simple layout with big buttons</li>
-          <li>{% include icon.html name="check" %}Power on over Wi-Fi</li>
-          <li>{% include icon.html name="check" %}Cast a photo</li>
-          <li>{% include icon.html name="check" %}iPad layout and Demo TV</li>
-          <li>{% include icon.html name="check" %}No ads, ever</li>
-        </ul>
-      </article>
-      <article class="plan plan--pro" data-reveal>
-        <h3>Loungemote <span class="pro">Pro</span></h3>
-        <p class="plan__lead">Everything you need to put the remote away.</p>
-        <ul class="ticks">
-          <li>{% include icon.html name="check" %}Swipe touchpad</li>
-          <li>{% include icon.html name="check" %}Phone keyboard and dictation</li>
-          <li>{% include icon.html name="check" %}Apps in one tap, with favorites</li>
-          <li>{% include icon.html name="check" %}Every TV at home</li>
-          <li>{% include icon.html name="check" %}Slideshows, videos, files, links and playlists</li>
-          <li>{% include icon.html name="check" %}Siri, Shortcuts and Spotlight</li>
-          <li>{% include icon.html name="check" %}Family Sharing</li>
-        </ul>
-        <p class="plan__note">Weekly, yearly or one-time lifetime purchase. The app shows the price before you buy. See the <a href="{{ '/terms/' | relative_url }}">Terms of Use</a>.</p>
-      </article>
-    </div>
-  </div>
-</section>
 
 <section class="section" id="faq">
   <div class="container container--narrow">

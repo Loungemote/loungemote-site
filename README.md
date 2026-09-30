@@ -15,13 +15,19 @@ The app opens the same three pages from `Links.swift`. Keep the two in step.
 
 ```
 _config.yml            site settings: email, effective date, App Store link, url and baseurl
-index.html             home page
+index.html             home page (English, the default language)
+zh/ ja/ de/            translated home pages; their text is in _data/home/<i18n>.yml
+_remotes/              one page per TV platform, for example /samsung-tv-remote/ (`remote` layout)
+llms.txt               plain summary for AI assistants and search tools
 privacy.md terms.md support.md   text pages (Markdown, `page` layout)
 404.html robots.txt site.webmanifest favicon.ico favicon.svg
-_layouts/              default.html (shell), page.html (text pages with a table of contents)
+_layouts/              default.html (shell), page.html (text pages with a table of contents),
+                       remote.html (platform pages), home-i18n.html (translated home pages)
 _includes/             head, header, footer, phone frame, App Store badge, icons, trademark line
 _data/faq.yml          home page FAQ (also feeds the FAQPage structured data)
-_data/platforms.yml    supported platforms (home page and support page)
+_data/platforms.yml    supported platforms (home page, support page, platform pages, llms.txt)
+_data/languages.yml    translated home pages (hreflang links and the footer language menu)
+_data/app.yml          app features for the structured data
 assets/css/main.css    all styles; tokens follow the app's design tokens (dark theme)
 assets/js/main.js      menu, scroll reveal, card spotlight; the site works without it
 assets/img/            app screens (WebP), icons, social image
@@ -45,9 +51,19 @@ Update `privacy.md` and the App Privacy answers in App Store Connect when you:
 - add a server or an account feature,
 - store new kinds of data.
 
+The app uses Google Analytics for Firebase and Firebase Crashlytics, on by default and turned off with **Settings > Privacy > Share Usage Data**. The Privacy Policy, the home page privacy section, `_data/faq.yml`, `_data/home/*.yml`, `support.md` and `llms.txt` describe this. Keep them in step with the app's tracking plan (`docs/analytics/tracking-plan.md` in the app repo).
+
 The Privacy Policy also says that this website has no cookies or analytics and loads nothing from other sites. Keep that true, or change the text.
 
-When the app adds a platform, update `_data/platforms.yml`, the "Works with" list at the top of `index.html`, `_data/faq.yml` and `_includes/trademarks.html`.
+When the app adds a platform, update `_data/platforms.yml`, the "Works with" list at the top of `index.html`, `_data/faq.yml`, `_includes/trademarks.html`, `_data/app.yml`, `llms.txt` and each `_data/home/*.yml`, and add a page in `_remotes/`.
+
+## Search and AI answers
+
+- Titles: the home page title is `seo_title` in `index.html`; platform pages set `seo_title` in their front matter. Keep the words close to the App Store name and subtitle (`docs/app-store/metadata.json` in the app repo).
+- Platform pages state only what the app's **Supported TVs** screen says (`MoreSettings.swift`): pairing, typing, apps, inputs and casting per platform. Their `faq` front matter is also the page's FAQPage structured data.
+- Translated home pages: add a language in `_data/languages.yml`, `_data/home/<i18n>.yml` and `<i18n>/index.html`. Use the app's own words for setting names (from `Localizable.xcstrings`). Legal and support pages stay in English.
+- After launch, set `app_store_url` and `app_store_id`: the structured data then gets the download link and `sameAs`, and `llms.txt` links the App Store.
+- Add the site to Google Search Console and submit `sitemap.xml`.
 
 ## Local preview
 
