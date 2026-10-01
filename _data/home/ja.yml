@@ -16,7 +16,7 @@ badge:
 hero:
   eyebrow: iPhone・iPad用テレビリモコン
   title: iPhoneが<br><em>リモコン</em>に。
-  lead: Loungemoteはテレビリモコンアプリです。ソニー、LG、Fire TV、Android TV、Google TV、ハイセンス、シャオミ、Samsung、Rokuなどのスマートテレビを Wi-Fiで操作します。赤外線アダプタもアカウントも不要、広告もありません。
+  lead: iPhoneやiPadから、Wi-Fiでスマートテレビを操作。赤外線アダプタもアカウントも不要、広告もありません。
   how_link: 使い方を見る
   works_with: 対応
   trust: [3日間無料, 広告なし, アカウント不要]
@@ -38,7 +38,7 @@ how:
   steps:
     - { screen: choose-tv, title: Wi-Fiでアプリを開く, text: Loungemoteがネットワークを探して、見つかったテレビやストリーミング端末を表示します。, alt: テレビを選択：このWi-Fiで見つかったテレビ。 }
     - { screen: pair, title: テレビで一度だけ許可, text: テレビで「許可」を選ぶか、表示されたコードを入力します。初回だけです。, alt: テレビとのペアリング：テレビがこのiPhoneを信頼するか確認しています。 }
-    - { screen: remote, title: 操作を始める, text: スマホがリモコンになりました。次回からはアプリを開くと自動で再接続します。, alt: リビングのテレビに接続したリモコン画面。 }
+    - { screen: apps, title: 操作を始める, text: スマホがリモコンになりました。次回からはアプリを開くと自動で再接続します。, alt: アプリをワンタップで：リビングのテレビのアプリ。 }
 devices:
   title: 10のテレビプラットフォームに、ひとつのアプリで。
   lead: Loungemoteは各テレビのネットワーク通信で操作するため、赤外線アダプタやハブは不要です。iPhoneとテレビが同じWi-Fiにあれば使えます。

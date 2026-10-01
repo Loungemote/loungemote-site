@@ -60,6 +60,7 @@ When the app adds a platform, update `_data/platforms.yml`, `_includes/trademark
 
 ## Search and AI answers
 
+- Platform pages set `hero_screen` (default `remote` in `_config.yml`; LG uses `touchpad`): the page head then shows that app screen, the download badge and the trust line from `_data/home/en.yml`.
 - Titles: the home page title is `seo_title` in `index.html` (translated pages: `title` in `_data/home/<i18n>.yml`); platform pages set `seo_title` in their front matter. Keep the words close to the App Store name and subtitle (`docs/app-store/metadata.json` in the app repo).
 - Platform pages state only what the app's **Supported TVs** screen says (`MoreSettings.swift`): pairing, typing, apps, inputs and casting per platform. Their `faq` front matter is also the page's FAQPage structured data.
 - Translated home pages: add a language in `_data/languages.yml`, `_data/home/<i18n>.yml` and `<i18n>/index.html`. Use the app's own words for setting names (from `Localizable.xcstrings`). Legal and support pages stay in English. Change `en.yml` first and keep every language to the same sections and items.

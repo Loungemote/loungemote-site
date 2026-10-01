@@ -640,10 +640,12 @@ a.store-badge:hover {
 
 /* ---------------------------------------------------------------- platforms marquee */
 
+/* The strip stays inside the content width, like every other section, and fades out at both ends. */
 .platforms {
   position: relative;
-  margin-top: -8px;
-  padding-block: 28px 12px;
+  max-width: calc(var(--container) + 2 * var(--gutter));
+  margin: -8px auto 0;
+  padding: 28px var(--gutter) 12px;
   text-align: center;
 }
 
@@ -659,8 +661,8 @@ a.store-badge:hover {
   display: flex;
   margin-top: 18px;
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, #000 12%, #000 88%, rgba(0, 0, 0, 0) 100%);
-  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, #000 12%, #000 88%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, #000 16%, #000 84%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, #000 16%, #000 84%, rgba(0, 0, 0, 0) 100%);
 }
 
 .marquee__track {
@@ -676,29 +678,27 @@ a.store-badge:hover {
   animation-play-state: paused;
 }
 
-/* Each platform is a glass capsule, like the platform labels in the app's Welcome illustration. Plain text only:
-   no logos or brand fonts (DD-28). */
+/* Plain text in a quiet grey, like a logo row but without logos or brand fonts (DD-28). */
 .marquee__track li {
   display: inline-flex;
   align-items: center;
-  margin-inline: clamp(5px, 0.7vw, 8px);
-  padding: 10px clamp(16px, 1.8vw, 22px);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.03) 100%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  color: var(--text);
-  font-size: clamp(0.9375rem, 1.25vw, 1.0625rem);
+  padding: 4px clamp(18px, 2.2vw, 28px);
+  color: var(--text-3);
+  font-size: clamp(1rem, 1.3vw, 1.125rem);
   font-weight: 600;
   letter-spacing: -0.01em;
-  line-height: 1.2;
   white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.marquee__track li:hover {
+  color: var(--text);
 }
 
 /* ---------------------------------------------------------------- sections */
 
 .section {
-  padding-block: clamp(56px, 7.5vw, 104px);
+  padding-block: clamp(48px, 6vw, 80px);
 }
 
 .section__head {
@@ -826,6 +826,28 @@ a.store-badge:hover {
 @media (max-width: 560px) {
   .bento {
     grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .bento .card {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 16px;
+    row-gap: 4px;
+    align-items: start;
+    padding: 18px;
+  }
+
+  .bento .card__icon {
+    grid-row: span 2;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border-radius: 12px;
+  }
+
+  .bento .card p {
+    font-size: 0.9375rem;
   }
 }
 
@@ -900,6 +922,17 @@ a.store-badge:hover {
   }
 }
 
+@media (max-width: 560px) {
+  .step__art {
+    height: 230px;
+    padding-top: 24px;
+  }
+
+  .step__art .phone {
+    --pw: 180px;
+  }
+}
+
 /* ---------------------------------------------------------------- devices */
 
 .devices {
@@ -954,7 +987,68 @@ a.store-badge:hover {
 
 @media (max-width: 420px) {
   .devices {
-    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .device {
+    padding: 16px 14px;
+  }
+}
+
+/* A platform with a setup guide: the whole card is the link (the name's link stretches over it). */
+.device__link {
+  color: inherit;
+}
+
+.device__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.device__link svg {
+  display: inline-block;
+  width: 0.85em;
+  height: 0.85em;
+  margin-left: 4px;
+  vertical-align: -0.05em;
+  color: var(--text-3);
+  transition: transform 0.25s var(--ease), color 0.25s;
+}
+
+.device:has(.device__link):hover {
+  border-color: var(--border-strong);
+}
+
+.device:has(.device__link):hover .device__link svg {
+  color: var(--ember-text);
+  transform: translateX(3px);
+}
+
+.device__link:focus-visible {
+  outline: none;
+}
+
+.device:has(.device__link:focus-visible) {
+  outline: 2px solid var(--ember);
+  outline-offset: 3px;
+}
+
+/* Small links get a 44 pt tall hit area on touch screens without changing the layout. */
+.cta__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+@media (pointer: coarse) {
+  .footnote a {
+    padding-block: 12px;
+  }
+
+  .site-footer nav a {
+    min-height: 44px;
   }
 }
 
@@ -1168,7 +1262,7 @@ a.store-badge:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px 24px;
+  gap: 0 24px;
   margin-top: 6px;
   font-size: 0.9375rem;
 }
@@ -1263,6 +1357,56 @@ a.store-badge:hover {
 .page__head h1 {
   font-size: clamp(2.375rem, 6vw, 3.75rem);
   letter-spacing: -0.04em;
+}
+
+.page__head--hero .container {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: clamp(32px, 6vw, 88px);
+}
+
+.page__hero-copy {
+  display: grid;
+  gap: 18px;
+  justify-items: start;
+}
+
+.page__hero-copy .hero__trust {
+  justify-content: flex-start;
+  margin-top: 4px;
+}
+
+.page__hero-art {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.page__hero-art::before {
+  content: "";
+  position: absolute;
+  inset: -20% -40%;
+  background: radial-gradient(closest-side, rgba(255, 140, 55, 0.3) 0%, rgba(255, 140, 55, 0) 100%);
+  pointer-events: none;
+}
+
+.page__hero-art .phone {
+  --pw: clamp(200px, 20vw, 250px);
+}
+
+@media (max-width: 820px) {
+  .page__head--hero .container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page__hero-art {
+    justify-self: center;
+    margin-top: 12px;
+  }
+
+  .page__hero-art .phone {
+    --pw: 180px;
+  }
 }
 
 .page__lead {

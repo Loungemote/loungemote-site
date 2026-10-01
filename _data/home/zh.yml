@@ -16,7 +16,7 @@ badge:
 hero:
   eyebrow: iPhone 和 iPad 电视遥控器
   title: 手机就是<br><em>电视遥控器</em>。
-  lead: Loungemote 是万能电视遥控器 App。它通过 Wi-Fi 控制三星、LG、索尼、小米、海信、Roku、Fire TV、Android TV 和 Google TV 等智能电视。无需红外发射器，无需账号，没有广告。
+  lead: 用 iPhone 或 iPad 通过 Wi-Fi 控制智能电视。无需红外发射器，无需账号，没有广告。
   how_link: 看看怎么用
   works_with: 支持
   trust: [免费试用 3 天, 没有广告, 无需账号]
@@ -38,7 +38,7 @@ how:
   steps:
     - { screen: choose-tv, title: 在 Wi-Fi 下打开 App, text: Loungemote 自动扫描网络，列出找到的电视和电视盒子。, alt: 选择电视：这个 Wi-Fi 网络中找到的电视。 }
     - { screen: pair, title: 在电视上确认一次, text: 在电视上选择“允许”，或输入电视显示的配对码。只需第一次。, alt: 配对电视：电视询问是否信任这台 iPhone。 }
-    - { screen: remote, title: 开始遥控, text: 手机就是遥控器了。下次打开 App 会自动重连。, alt: 已连接客厅电视的遥控界面。 }
+    - { screen: apps, title: 开始遥控, text: 手机就是遥控器了。下次打开 App 会自动重连。, alt: 一键打开应用：客厅电视上的应用。 }
 devices:
   title: 十个电视平台，一个 App。
   lead: Loungemote 使用各电视自己的网络协议，不需要红外发射器或网关。iPhone 和电视连接同一个 Wi-Fi 即可。

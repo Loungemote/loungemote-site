@@ -3,6 +3,7 @@ title: LG TV Remote App for iPhone
 seo_title: LG TV Remote App for iPhone and iPad · Loungemote
 brand: LG TVs
 platform: LG
+hero_screen: touchpad
 description: Control an LG webOS smart TV from your iPhone or iPad over Wi-Fi. Remote, input switching, pointer touchpad, keyboard, apps and casting with Loungemote Pro, free for 3 days.
 lead: Loungemote turns your iPhone or iPad into a remote for LG smart TVs with webOS. It works over your Wi-Fi, needs no LG account, and brings the Magic Remote pointer to your phone.
 faq:
