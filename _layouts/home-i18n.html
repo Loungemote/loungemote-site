@@ -50,7 +50,7 @@ layout: default
 
 <section class="section" id="features">
   <div class="container">
-    <header class="section__head" data-reveal>
+    <header class="section__head section__head--center" data-reveal>
       <p class="eyebrow">{{ t.nav.features }}</p>
       <h2>{{ t.features.title }}</h2>
       <p>{{ t.features.lead }}</p>
@@ -64,7 +64,7 @@ layout: default
       </article>
       {%- endfor %}
     </div>
-    <p class="footnote" data-reveal>{{ t.features.footnote }}</p>
+    <p class="footnote footnote--center" data-reveal>{{ t.features.footnote }}</p>
   </div>
 </section>
 
@@ -92,7 +92,7 @@ layout: default
 
 <section class="section" id="devices">
   <div class="container">
-    <header class="section__head" data-reveal>
+    <header class="section__head section__head--center" data-reveal>
       <p class="eyebrow">{{ t.nav.devices }}</p>
       <h2>{{ t.devices.title }}</h2>
       <p>{{ t.devices.lead }}</p>
@@ -101,7 +101,7 @@ layout: default
       {%- assign devices = t.devices.items | default: site.data.platforms %}
       {%- for d in devices %}
       <li class="device" data-reveal>
-        <h3>{% if d.page %}<a href="{{ d.page | relative_url }}">{{ d.name }}</a>{% else %}{{ d.name }}{% endif %}</h3>
+        <h3>{% if d.page %}<a class="device__link" href="{{ d.page | relative_url }}">{{ d.name }}{% include icon.html name="arrow" %}</a>{% else %}{{ d.name }}{% endif %}</h3>
         <p>{{ d.detail }}</p>
         {%- if d.pairing %}
         <span class="device__tag">{{ d.pairing }}</span>
@@ -109,7 +109,7 @@ layout: default
       </li>
       {%- endfor %}
     </ul>
-    <p class="footnote" data-reveal>{{ t.devices.footnote }}</p>
+    <p class="footnote footnote--center" data-reveal>{{ t.devices.footnote }}</p>
   </div>
 </section>
 

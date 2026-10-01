@@ -3,8 +3,10 @@ layout: default
 ---
 {%- comment -%} Text pages. The table of contents is built from the page's h2 headings (kramdown gives each an id). {%- endcomment -%}
 <article class="page">
-  <header class="page__head">
+  {%- comment -%} `hero_screen` (the platform pages) adds the app, the download badge and the trust line to the head. {%- endcomment %}
+  <header class="page__head{% if page.hero_screen %} page__head--hero{% endif %}">
     <div class="container">
+      {%- if page.hero_screen %}<div class="page__hero-copy">{% endif %}
       {%- if page.eyebrow %}
       <p class="eyebrow">{{ page.eyebrow }}</p>
       {%- endif %}
@@ -14,6 +16,18 @@ layout: default
       {%- endif %}
       {%- if page.dated %}
       <p class="page__date">Effective date: {{ site.effective_date }}</p>
+      {%- endif %}
+      {%- if page.hero_screen %}
+      {% include store-badge.html %}
+      <ul class="hero__trust">
+        {%- for item in site.data.home.en.hero.trust %}
+        <li>{% include icon.html name="check" %}{{ item }}</li>
+        {%- endfor %}
+      </ul>
+      </div>
+      <div class="page__hero-art">
+        {% include phone.html screen=page.hero_screen alt=site.data.home.en.hero.alt priority=true %}
+      </div>
       {%- endif %}
     </div>
   </header>

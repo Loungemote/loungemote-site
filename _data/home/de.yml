@@ -16,7 +16,7 @@ badge:
 hero:
   eyebrow: TV-Fernbedienung für iPhone und iPad
   title: Dein iPhone ist <em>die TV-Fernbedienung</em>.
-  lead: Loungemote ist eine Fernbedienungs-App für iPhone und iPad. Sie steuert Samsung, LG, Sony, Fire TV, Android TV, Google TV, Philips, Hisense, Roku und weitere Smart TVs über dein WLAN. Ohne Infrarot-Adapter, ohne Konto, ohne Werbung.
+  lead: Steuere deinen Smart TV per WLAN mit iPhone oder iPad. Ohne Infrarot-Adapter, ohne Konto, ohne Werbung.
   how_link: So funktioniert's
   works_with: Funktioniert mit
   trust: [3 Tage gratis, Keine Werbung, Kein Konto]
@@ -38,7 +38,7 @@ how:
   steps:
     - { screen: choose-tv, title: App im WLAN öffnen, text: Loungemote durchsucht dein Netzwerk und zeigt die gefundenen Fernseher und Streaming-Geräte., alt: "Fernseher wählen: die in diesem WLAN gefundenen Fernseher." }
     - { screen: pair, title: Einmal am Fernseher bestätigen, text: "Wähle am Fernseher „Zulassen“ oder gib den angezeigten Code ein. Nur beim ersten Mal.", alt: "Fernseher koppeln: Der Fernseher fragt, ob er diesem iPhone vertrauen soll." }
-    - { screen: remote, title: Loslegen, text: Dein Handy ist jetzt die Fernbedienung. Beim nächsten Öffnen verbindet sich die App von selbst., alt: Die Fernbedienung ist mit dem Wohnzimmer-Fernseher verbunden. }
+    - { screen: apps, title: Loslegen, text: Dein Handy ist jetzt die Fernbedienung. Beim nächsten Öffnen verbindet sich die App von selbst., alt: "Apps mit einem Tipp: die Apps des Fernsehers im Wohnzimmer." }
 devices:
   title: Zehn TV-Plattformen. Eine App.
   lead: Loungemote nutzt das Netzwerkprotokoll des jeweiligen Fernsehers, daher braucht es keinen Infrarot-Adapter und keinen Hub. iPhone und Fernseher müssen nur im selben WLAN sein.

@@ -12,7 +12,7 @@ nav:
 hero:
   eyebrow: TV remote for iPhone and iPad
   title: Your iPhone is <em>the&nbsp;TV&nbsp;remote</em>.
-  lead: Loungemote is a TV remote app for iPhone and iPad. It controls Samsung, LG, Roku, Fire TV, Android TV, Google TV, Vizio, Sony and other smart TVs over your Wi&#8209;Fi. No infrared blaster, no account, no ads.
+  lead: Control your smart TV from your iPhone or iPad over Wi&#8209;Fi. No infrared blaster, no account, no ads.
   how_link: See how it works
   works_with: Works with
   trust: [3 days free, No ads, No account]
@@ -34,7 +34,7 @@ how:
   steps:
     - { screen: choose-tv, title: Open the app on your Wi-Fi, text: Loungemote scans your network and lists the TVs and streaming devices it finds., alt: "Choose your TV: the TVs found on this Wi-Fi network." }
     - { screen: pair, title: Approve it once on the TV, text: "Select Allow on the TV, or type the code it shows. You only do this the first time.", alt: "Pair TV: the TV asks whether to trust this iPhone." }
-    - { screen: remote, title: Start pressing, text: "Your phone is now the remote. Next time, the app reconnects as soon as you open it.", alt: The remote, connected to the Living Room TV. }
+    - { screen: apps, title: Start pressing, text: "Your phone is now the remote. Next time, the app reconnects as soon as you open it.", alt: "Apps in one tap: the apps on the Living Room TV." }
 devices:
   title: Ten TV platforms. One app.
   lead: Loungemote speaks each TV's own network protocol, so it needs no infrared blaster and no hub. Your iPhone and your TV only have to be on the same Wi-Fi network.
