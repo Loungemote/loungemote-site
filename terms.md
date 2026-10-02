@@ -14,7 +14,7 @@ By downloading or using Loungemote ("the app"), you agree to these terms. If you
 
 ## License
 
-Apple's [Licensed Application End User License Agreement (Standard EULA)](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) applies to your use of Loungemote. It sets out your license to use the app, the warranty disclaimer and the limits of liability. The terms on this page add information about purchases, supported devices and acceptable use.
+For the iOS version, Apple's [Licensed Application End User License Agreement (Standard EULA)](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) applies to your use of Loungemote. It sets out your license to use the app, the warranty disclaimer and the limits of liability. The terms on this page add information about purchases, supported devices and acceptable use.
 
 ## Loungemote Pro
 
@@ -34,6 +34,12 @@ The app shows the price and the period before you buy.
 - Apple handles all refunds. To ask for a refund, go to [reportaproblem.apple.com](https://reportaproblem.apple.com).
 - To restore a purchase on another device, open **Settings** in the app and tap **Restore Purchases**.
 
+## Android purchases
+
+The Android version uses Google Play. Its Pro plans are weekly, yearly and a one-time Lifetime purchase. Eligible new subscribers can receive a three-day trial on the weekly plan; the yearly plan has no trial. Local prices and eligible offers are shown before purchase.
+
+Google Play processes Android payments. Subscriptions renew unless cancelled through Google Play before renewal. Deleting the app does not cancel a subscription. Restore access with the Google account used for the purchase. Google Play handles Android refund requests. Apple-specific payment and cancellation instructions above apply only to iOS purchases.
+
 ## Acceptable use
 
 - Use the app only with TVs, streaming devices and networks that you own or have permission to control.
@@ -42,7 +48,7 @@ The app shows the price and the period before you buy.
 
 ## Supported devices
 
-Loungemote works only with TVs and streaming devices on the same local network as your iPhone. Some features depend on the TV model and its software version. TV makers can change their software at any time, and a change can stop a feature from working. We try to fix these problems quickly, but we cannot guarantee that every feature works with every TV.
+Loungemote works only with TVs and streaming devices on the same local network as your phone or tablet. Some features depend on the TV model and its software version. TV makers can change their software at any time, and a change can stop a feature from working. We try to fix these problems quickly, but we cannot guarantee that every feature works with every TV.
 
 ## Third-party services
 
@@ -50,7 +56,7 @@ Casting to Google Cast devices uses Google's Cast SDK. Web links that you cast a
 
 ## Privacy
 
-The [Privacy Policy]({{ '/privacy/' | relative_url }}) explains which data the app uses. In short, we do not collect personal data.
+The [Privacy Policy]({{ '/privacy/' | relative_url }}) explains which data the app uses. It describes local records, purchases, optional analytics and Google Cast processing for each platform.
 
 ## Warranty and liability
 

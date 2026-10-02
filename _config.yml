@@ -9,7 +9,7 @@ lang: en
 # Every contact link uses this address. It must match `supportEmail` in the app's Links.swift.
 email: loungemote@outlook.com
 # Shown on the Privacy Policy and the Terms of Use. Change it whenever one of them changes.
-effective_date: October 1, 2026
+effective_date: October 3, 2026
 
 # Leave empty until the app is live. With a URL, every "Coming soon" badge becomes a download link.
 app_store_url: ""

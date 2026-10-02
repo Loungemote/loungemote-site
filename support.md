@@ -10,7 +10,7 @@ description: Get help with Loungemote. Supported TVs, fixes for discovery, pairi
 <div class="contact-card">
   <div>
     <h2 id="contact">Contact us</h2>
-    <p>Tell us your TV brand and model, and your iOS version. We answer by email.</p>
+    <p>Tell us your TV brand and model, and your iOS or Android version. We answer by email.</p>
   </div>
   <a class="button button--ghost" href="mailto:{{ site.email }}">{% include icon.html name="mail" %}{{ site.email }}</a>
 </div>
@@ -28,6 +28,14 @@ In the app, **Contact Support** writes this email for you and can attach a diagn
 Philips TVs with Google TV connect as Google TV. Casting photos and videos works on every supported platform except Fire TV, and on Chromecast and DLNA devices. Apple TV is not supported.
 
 Your iPhone and your TV must be on the same Wi-Fi network. Loungemote needs iOS 17 or iPadOS 17 or later.
+
+## Android support
+
+Loungemote for Android needs Android 8.0 or later. Connect the Android device and TV to the same Wi-Fi network. Allow the app's requested nearby-device permissions. Guest networks can block TV discovery. You can also use **Add by IP address** with the TV's local address.
+
+For Android purchases, use the Google account used to buy Pro. Subscriptions are managed in Google Play. Deleting Loungemote does not cancel a subscription. Google Play handles Android refunds.
+
+The instructions below that refer to iPhone settings or Apple purchases apply to the iOS version.
 
 ## The app cannot find my TV
 
@@ -71,7 +79,7 @@ Apple handles all refunds. To ask for one, go to [reportaproblem.apple.com](http
 
 ## Privacy and terms
 
-Loungemote has no accounts and no ads, and remote commands stay on your local network. Anonymous usage statistics and crash reports help us fix problems, and you can turn them off in **Settings > Privacy > Share Usage Data**. Read the [Privacy Policy]({{ '/privacy/' | relative_url }}) and the [Terms of Use]({{ '/terms/' | relative_url }}).
+Loungemote has no accounts and no ads, and remote commands stay on your local network. The iOS version has optional usage and crash reports controlled by **Share Usage Data**. The Android release has no Firebase configuration. Google Cast processing is separate from that switch. Read the [Privacy Policy]({{ '/privacy/' | relative_url }}) and the [Terms of Use]({{ '/terms/' | relative_url }}).
 
 ---
 
