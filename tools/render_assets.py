@@ -4,7 +4,7 @@
 Screens come from the same boards as the App Store screenshots (brand names neutralised,
 1.0 features only), without a device frame: the site draws the frame in CSS (`.phone`).
 
-    python3 tools/render_assets.py [path/to/Loungemote [screens] [icons] [og]]
+    python3 tools/render_assets.py [path/to/Loungemote [screens] [apps] [icons] [og]]
 
 Needs Google Chrome, beautifulsoup4 and Pillow. The app repo defaults to ../Loungemote.
 """
@@ -13,6 +13,7 @@ import sys
 import tempfile
 from pathlib import Path
 
+from bs4 import BeautifulSoup
 from PIL import Image
 
 SITE = Path(__file__).resolve().parents[1]
@@ -22,6 +23,39 @@ import build as shots  # noqa: E402  (the App Store screenshot builder)
 
 IMG = SITE / "assets" / "img"
 ICON_PNG = APP / "ios" / "Loungemote" / "Resources" / "Assets.xcassets" / "AppIcon.appiconset" / "AppIcon.png"
+
+# Keep the fictional apps. Their glyphs describe the same uses as the native demo.
+APP_ICON_PATHS = {
+    "Streamly": '<rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/>',
+    "Tubeview": '<path d="m9 5 11 7-11 7z" fill="currentColor" stroke="none"/>',
+    "Cinemo": '<rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M7.5 4v16M16.5 4v16M3 9h4.5M3 15h4.5M16.5 9H21M16.5 15H21"/>',
+    "Kidzone": '<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9z" fill="currentColor" stroke="none"/>',
+    "Newsnow": '<rect x="4" y="4" width="16" height="16" rx="2"/><rect x="7" y="7" width="4" height="4" rx=".5"/><path d="M14 7h3M14 11h3M7 14h10M7 17h10"/>',
+    "Soundwave": '<path d="M9 17V6l11-2v11M9 10l11-2"/><ellipse cx="6" cy="17" rx="3" ry="2" fill="currentColor"/><ellipse cx="17" cy="15" rx="3" ry="2" fill="currentColor"/>',
+    "Fitloop": '<rect x="3" y="7" width="4" height="10" rx="1"/><rect x="17" y="7" width="4" height="10" rx="1"/><path d="M7 12h10M1 10v4M23 10v4"/>',
+    "Gamebox": '<path d="M8 7h8c2 0 3 1 3.5 3l1.5 7c.5 2.5-2 3.5-3.5 1.5L15 16H9l-2.5 2.5C5 20.5 2.5 19.5 3 17l1.5-7C5 8 6 7 8 7zM7 10v4M5 12h4"/><circle cx="15" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="18" cy="13" r="1" fill="currentColor" stroke="none"/>',
+    "Photobook": '<rect x="3" y="4.5" width="18" height="15" rx="3"/><circle cx="9" cy="10" r="1.8"/><path d="m21 16-5-5-8.5 8.5"/>',
+    "Podcasty": '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M9 21h6"/>',
+    "Sportly": '<path d="M7 3h10v7a5 5 0 0 1-10 0zM7 5H3v3a4 4 0 0 0 4 4M17 5h4v3a4 4 0 0 1-4 4M12 15v5M8 21h8"/>',
+}
+
+
+def app_icons(inner):
+    """Replace app initials with category glyphs in the website preview."""
+    soup = BeautifulSoup(inner, "html.parser")
+    for button in soup.select('button[aria-label^="Open "]'):
+        name = button["aria-label"][len("Open "):]
+        paths = APP_ICON_PATHS[name]
+        tile = button.find("span", recursive=False)
+        tile.clear()
+        svg = BeautifulSoup(
+            '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" '
+            'stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '
+            'stroke-linejoin="round" aria-hidden="true" style="flex:none">'
+            f'{paths}</svg>', "html.parser").svg
+        tile.append(svg)
+    return str(soup)
+
 
 def chrome(html, out, w, h, dpr):
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
@@ -36,6 +70,8 @@ def chrome(html, out, w, h, dpr):
 
 def screen(name, inner, extra=""):
     """One app screen at 390 x 844 pt @2x, with the status bar, Dynamic Island and home indicator but no bezel."""
+    if name == "apps":
+        inner = app_icons(inner)
     css = shots.CSS % {"w": 390, "h": 844, "tint": "rgba(0,0,0,0)"} + "body{background:#07080C}.grid{display:none}"
     html = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><style>{css}</style></head><body>{inner}{extra}'
             f'{shots.status_bar()}<span class="island"></span><span class="homebar"></span></body></html>')
@@ -84,7 +120,7 @@ def og():
     body = ('<span class="grid"></span>' + shots.halo(930, 420, 430)
             + f'<div class="og"><span class="brand">{icon}Loungemote</span>'
             '<h1>One remote for <em>every&nbsp;TV</em> at&nbsp;home.</h1>'
-            '<p>A fast, private Wi‑Fi TV remote for iPhone and iPad. No account, no ads.</p></div>'
+            '<p>A private Wi‑Fi TV remote for Android, iPhone&nbsp;and&nbsp;iPad. No account, no ads.</p></div>'
             + shots.phone(shots.board("08-remote-buttons"), 0.92, 58, left=742))
     html = f'<!doctype html><html lang="en"><head><meta charset="utf-8"><style>{css}</style></head><body>{body}</body></html>'
     png = IMG / "og.png"
@@ -101,6 +137,8 @@ if __name__ == "__main__":
     only = sys.argv[2:] or ["screens", "icons", "og"]
     if "screens" in only:
         screens()
+    elif "apps" in only:
+        screen("apps", shots.board("16-apps"))
     if "icons" in only:
         icons()
     if "og" in only:

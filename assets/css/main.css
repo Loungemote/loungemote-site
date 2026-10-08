@@ -250,10 +250,22 @@ h2 em {
   border-color: var(--border-strong);
 }
 
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero__actions .store-links, .cta .store-links {
+  justify-content: center;
+}
+
 .store-badge {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  min-width: 188px;
   min-height: 56px;
   padding: 8px 22px 8px 18px;
   border: 1px solid rgba(255, 255, 255, 0.28);
@@ -293,15 +305,51 @@ a.store-badge:hover {
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5);
 }
 
-.store-badge--soon {
-  cursor: default;
-  border-style: dashed;
-  border-color: rgba(255, 184, 114, 0.5);
-  background: rgba(0, 0, 0, 0.55);
+.store-play {
+  display: block;
+  flex: none;
+  border-radius: 8px;
+  transition: transform 0.25s var(--ease), filter 0.25s;
 }
 
-.store-badge--soon .icon {
-  color: var(--ember-text);
+.store-play img {
+  display: block;
+  width: 188px;
+  height: 56px;
+}
+
+.store-play:hover {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.5));
+}
+
+/* iOS status until the App Store link is live: one quiet line under the Google Play badge. */
+.store-soon {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--text-3);
+  font-size: 0.875rem;
+}
+
+.hero__actions .store-links {
+  display: contents;
+}
+
+.hero__actions .store-soon {
+  margin-top: -4px;
+  text-align: center;
+}
+
+/* Once the badge and "See how it works" share a row, the note moves under both. */
+@media (min-width: 520px) {
+  .hero__actions .store-soon {
+    order: 1;
+    margin-top: -2px;
+  }
+}
+
+.cta .store-soon {
+  text-align: center;
 }
 
 .footnote {
@@ -541,6 +589,12 @@ a.store-badge:hover {
   font-size: 0.75rem;
   letter-spacing: 0.12em;
   white-space: nowrap;
+}
+
+@media (max-width: 359px) {
+  .hero__eyebrow {
+    white-space: normal;
+  }
 }
 
 .dot {
@@ -1078,9 +1132,19 @@ a.store-badge:hover {
 }
 
 .privacy__copy {
+  min-width: 0;
   display: grid;
   gap: 20px;
   justify-items: start;
+}
+
+.privacy__copy .button, .contact-card .button {
+  max-width: 100%;
+  padding-block: 12px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .privacy__copy > p:not(.eyebrow) {
@@ -1249,8 +1313,58 @@ a.store-badge:hover {
   font-size: 1.125rem;
 }
 
-.cta .store-badge {
+.cta .store-links {
   margin-top: 10px;
+}
+
+.cta__downloads {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.cta__downloads .store-links {
+  margin-top: 0;
+  min-width: 0;
+}
+
+.download-qr {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .download-qr {
+    display: grid;
+    justify-items: center;
+    gap: 12px;
+    flex: none;
+    color: var(--text-2);
+    font-size: 0.875rem;
+  }
+
+  .download-qr:hover {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .download-qr__image {
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 8px;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+  }
+
+  .cta__downloads .store-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
 }
 
 .cta > .cta__meta {
@@ -1385,7 +1499,7 @@ a.store-badge:hover {
 .page__hero-art::before {
   content: "";
   position: absolute;
-  inset: -20% -40%;
+  inset: -20% -30%;
   background: radial-gradient(closest-side, rgba(255, 140, 55, 0.3) 0%, rgba(255, 140, 55, 0) 100%);
   pointer-events: none;
 }

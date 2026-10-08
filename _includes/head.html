@@ -37,7 +37,7 @@
 <meta property="og:image" content="{{ page.image | absolute_url }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Loungemote, a TV remote app, shown on an iPhone.">
+<meta property="og:image:alt" content="Loungemote TV remote shown in an iOS preview.">
 <meta property="og:locale" content="{{ page.og_locale | default: 'en_US' }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ full_title | escape }}">
@@ -74,28 +74,44 @@
       "inLanguage": {{ page.lang | default: site.lang | jsonify }},
       "publisher": { "@id": "{{ '/' | absolute_url }}#organization" }
     },
+    {%- if site.google_play_url and site.google_play_url != "" %}
     {
       "@type": "MobileApplication",
-      "@id": "{{ '/' | absolute_url }}#app",
+      "@id": "{{ '/' | absolute_url }}#android-app",
       "name": "{{ site.title }}",
       "alternateName": "Loungemote TV Remote",
       "description": {{ description | jsonify }},
       "url": "{{ '/' | absolute_url }}",
       "image": "{{ '/assets/img/icon-512.png' | absolute_url }}",
-      "screenshot": "{{ '/assets/img/screens/remote.webp' | absolute_url }}",
       "applicationCategory": "UtilitiesApplication",
-      "operatingSystem": "iOS 17.0 or later, iPadOS 17.0 or later",
+      "operatingSystem": "Android 8.0 or later",
       "inLanguage": ["en", "zh-Hans", "zh-Hant", "ja", "ko", "de", "fr", "es", "pt-BR", "ru", "id"],
-      "featureList": {{ site.data.app.features | jsonify }},
+      "featureList": {{ site.data.app.features | concat: site.data.app.android_features | jsonify }},
       "isAccessibleForFree": false,
       "publisher": { "@id": "{{ '/' | absolute_url }}#organization" },
-      {%- if site.app_store_url and site.app_store_url != "" %}
-      "downloadUrl": "{{ site.app_store_url }}",
-      "installUrl": "{{ site.app_store_url }}",
-      "sameAs": ["{{ site.app_store_url }}"],
-      {%- endif %}
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free download. Controlling a TV needs Loungemote Pro, an in-app purchase; the weekly plan starts with a 3-day free trial for new subscribers." }
+      "downloadUrl": {{ site.google_play_url | jsonify }},
+      "installUrl": {{ site.google_play_url | jsonify }},
+      "sameAs": [{{ site.google_play_url | jsonify }}],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free download on Google Play. Continued TV control needs Loungemote Pro; the weekly plan offers a 3-day trial for eligible new subscribers." }
     },
+    {%- endif %}
+    {%- if site.app_store_url and site.app_store_url != "" %}
+    {
+      "@type": "MobileApplication",
+      "@id": "{{ '/' | absolute_url }}#ios-app",
+      "name": "{{ site.title }}",
+      "url": "{{ '/' | absolute_url }}",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "iOS 17.0 or later, iPadOS 17.0 or later",
+      "featureList": {{ site.data.app.features | concat: site.data.app.ios_features | jsonify }},
+      "downloadUrl": {{ site.app_store_url | jsonify }},
+      "installUrl": {{ site.app_store_url | jsonify }},
+      "sameAs": [{{ site.app_store_url | jsonify }}],
+      "publisher": { "@id": "{{ '/' | absolute_url }}#organization" },
+      "isAccessibleForFree": false,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free download. Continued TV control requires Loungemote Pro." }
+    },
+    {%- endif %}
     {
       "@type": "FAQPage",
       "mainEntity": [

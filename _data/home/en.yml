@@ -1,6 +1,4 @@
-# English home page (/). The translated pages in _data/home/ follow this file section by section, so every language
-# shows the same sections. `devices.items` is left out: the English page lists _data/platforms.yml with links to the
-# platform pages. The page title and description come from index.html and _config.yml.
+# Home page copy. Keep release status, platform features and privacy facts in step across all languages.
 nav:
   features: Features
   how: How it works
@@ -10,65 +8,72 @@ nav:
   support: Support
   get: Get the app
 hero:
-  eyebrow: TV remote for iPhone and iPad
-  title: Your iPhone is <em>the&nbsp;TV&nbsp;remote</em>.
-  lead: Control your smart TV from your iPhone or iPad over Wi&#8209;Fi. No infrared blaster, no account, no ads.
+  eyebrow: For Android, iPhone and iPad
+  title: Your phone is <em>the&nbsp;TV&nbsp;remote</em>.
+  lead: Control your smart TV from your phone or tablet over Wi-Fi. No infrared blaster, no account, no ads.
   how_link: See how it works
   works_with: Works with
-  trust: [3 days free, No ads, No account]
+  trust: ["3 days free", "No ads", "No account"]
   alt: "The Loungemote remote: a directional pad with an OK button, media keys, volume and channel controls."
 features:
   title: Everything your remote does, and more.
   lead: The full button remote, plus a touchpad, your phone's keyboard, apps in one tap and casting.
-  footnote: Some features depend on the TV model and its software.
+  footnote: Features depend on your TV model, software and phone platform. Siri, Shortcuts and AirPlay guides are for iOS only.
   items:
-    - { icon: dpad, title: A full remote, text: "Directional pad, OK, Back, Home, volume, channels, playback and power. Finds the TVs on your Wi-Fi and reconnects when you open the app." }
-    - { icon: hand, title: Swipe touchpad, text: "Glide through menus with your thumb and tap for OK. On LG TVs it moves the pointer." }
-    - { icon: keyboard, title: Phone keyboard, text: "Type searches and passwords with your iPhone keyboard, or dictate them." }
-    - { icon: grid, title: Apps in one tap, text: "Every app on your TV in one grid. Open one straight from your phone." }
-    - { icon: cast, title: Cast to the big screen, text: "Photos, slideshows, videos, files and links to your TV, Chromecast or Roku." }
-    - { icon: bolt, title: Power on over Wi-Fi, text: "Wake a TV from standby with your phone, on TVs that support it." }
+    - { icon: "dpad", title: "A full remote", text: "Directional pad, OK, Back, Home, volume, channels, playback and power. Finds the TVs on your Wi-Fi and reconnects when you open the app." }
+    - { icon: "hand", title: "Swipe touchpad", text: "Glide through menus with your thumb and tap for OK. On LG TVs it moves the pointer." }
+    - { icon: "keyboard", title: "Phone keyboard", text: "Type searches and sign-ins with your phone keyboard on supported TVs." }
+    - { icon: "grid", title: "Apps in one tap", text: "Every app on your TV in one grid. Open one straight from your phone." }
+    - { icon: "cast", title: "Cast to the big screen", text: "Photos, slideshows, videos, files and links to your TV, Chromecast or Roku." }
+    - { icon: "bolt", title: "Power on over Wi-Fi", text: "Wake a TV from standby with your phone, on TVs that support it." }
 how:
   title: Ready in seconds.
   lead: No sign-in and no extra hardware. If your TV is on your Wi-Fi, you're most of the way there.
   steps:
-    - { screen: choose-tv, title: Open the app on your Wi-Fi, text: Loungemote scans your network and lists the TVs and streaming devices it finds., alt: "Choose your TV: the TVs found on this Wi-Fi network." }
-    - { screen: pair, title: Approve it once on the TV, text: "Select Allow on the TV, or type the code it shows. You only do this the first time.", alt: "Pair TV: the TV asks whether to trust this iPhone." }
-    - { screen: apps, title: Start pressing, text: "Your phone is now the remote. Next time, the app reconnects as soon as you open it.", alt: "Apps in one tap: the apps on the Living Room TV." }
+    - { screen: "choose-tv", title: "Open the app on your Wi-Fi", text: "Loungemote scans your network and lists the TVs and streaming devices it finds.", alt: "Choose your TV: the TVs found on this Wi-Fi network." }
+    - { screen: "pair", title: "Approve it once on the TV", text: "Select Allow on the TV, or type the code it shows. You only do this the first time.", alt: "Pairing preview: the TV asks whether to trust this phone." }
+    - { screen: "apps", title: "Start pressing", text: "Your phone is now the remote. Next time, the app reconnects as soon as you open it.", alt: "Apps in one tap: the apps on the Living Room TV." }
 devices:
   title: Ten TV platforms. One app.
-  lead: Loungemote speaks each TV's own network protocol, so it needs no infrared blaster and no hub. Your iPhone and your TV only have to be on the same Wi-Fi network.
+  lead: Loungemote uses each TV’s own network protocol, so it needs no infrared blaster or hub. Your phone or tablet and your TV must be on the same Wi-Fi network.
   footnote: Roku TV and Google TV models from other brands, such as TCL, work too. Casting isn't available on Fire TV. Apple TV and infrared-only TVs are not supported. Select a platform for its setup guide.
 privacy:
   title: Private <em>by design</em>.
   lead: A remote has no reason to know who you are. Loungemote has no accounts and no servers of its own, and remote commands go straight from your phone to your TV.
   link: Read the privacy policy
   items:
-    - { icon: useroff, title: No account, text: "No sign-up, no email address, nothing to log in to." }
-    - { icon: eyeoff, title: No ads, text: No advertising code and no advertising identifier. }
-    - { icon: wifi, title: Stays on your network, text: "Commands travel over your Wi-Fi, directly to the TV you selected." }
-    - { icon: lock, title: Keys stay on your iPhone, text: Pairing data is kept in the iOS Keychain and never sent to us. }
-  note: The app sends anonymous usage statistics and crash reports to Google (Firebase) so we can see which TVs connect and fix problems. They never include TV names, network addresses, what you type or what you cast, and you can turn them off in Settings > Privacy > Share Usage Data. When you cast to a Google Cast device, Google's Cast SDK also sends Google diagnostic data.
+    - { icon: "useroff", title: "No account", text: "No sign-up, no email address, nothing to log in to." }
+    - { icon: "eyeoff", title: "No ads", text: "No advertising code and no advertising identifier." }
+    - { icon: "wifi", title: "Stays on your network", text: "Commands travel over your Wi-Fi, directly to the TV you selected." }
+    - { icon: "lock", title: "Keys stay on your device", text: "Pairing records use Android Keystore protection or the iOS Keychain. They are not sent to us." }
+  note: On Android, Share Usage Data is off by default and the current release has no Firebase configuration. On iOS, Firebase usage statistics and crash reports are on by default; turn them off in Settings > Privacy > Share Usage Data. These reports exclude TV names, network addresses, typed text and cast content. Google Cast has separate diagnostic collection that this switch does not control.
 faq:
   title: Questions, answered.
   more: Something else? Email us at
   items:
     - q: Is Loungemote free?
-      a: Downloading, setup and the Demo TV are free, and there are no ads. Controlling your TV needs Loungemote Pro, which includes the full remote, the touchpad, the phone keyboard, the app launcher, Siri and Shortcuts, and casting of photos, videos, files and links. Pro is a weekly subscription with a 3-day free trial for new subscribers, a yearly subscription, or a one-time lifetime purchase.
+      a: Download, setup, your first key press to check the connection and Demo TV are free, with no ads. TV control, touchpad, keyboard, app launch and media casting need Loungemote Pro. Choose a weekly subscription with a 3-day trial for eligible new subscribers, a yearly subscription with no trial, or a one-time Lifetime purchase. Prices and offers appear before payment. Android purchases use Google Play; iOS purchases use the App Store. Siri and Shortcuts are for iOS only.
     - q: Which TVs work with Loungemote?
       a: Samsung smart TVs with Tizen (2016 and later), LG webOS TVs, Sony Bravia, Xiaomi TVs with PatchWall, Hisense TVs with VIDAA, Philips TVs with Titan OS or Saphi, Android TV and Google TV devices, Roku, Amazon Fire TV and Vizio SmartCast. Roku TV and Google TV models from other brands, such as TCL, work too. Apple TV and infrared-only TVs are not supported.
     - q: Do I need an IR blaster or a universal remote?
       a: No. Loungemote controls smart TVs over your home Wi-Fi. It does not use infrared, so it cannot control older TVs that only accept an infrared remote.
     - q: The app can't find my TV. What should I do?
-      a: Check that the TV is on and on the same Wi-Fi as your iPhone (guest networks often keep devices apart), and turn on Loungemote in iOS Settings > Privacy & Security > Local Network. If it still doesn't appear, add the TV by its IP address in the app.
+      a: Keep the TV on and connect it to the same Wi-Fi as your phone; guest networks can block discovery. On Android, allow Nearby devices when requested. On iOS, enable Loungemote in Settings > Privacy & Security > Local Network. You can also add a TV by its IP address.
     - q: Can I turn my TV on with my phone?
       a: On many TVs, yes. First turn on the TV's network wake setting, such as Power On with Mobile on Samsung, Turn on via Wi-Fi on LG or Fast TV start on Roku TV.
     - q: What data does Loungemote collect?
-      a: No personal data. There are no accounts and no ads, and remote commands go straight from your iPhone to your TV. To see which TVs connect and to fix crashes, the app sends anonymous usage statistics and crash reports to Google Analytics for Firebase and Firebase Crashlytics. They never include TV names, network addresses, text you type or what you cast, and you can turn them off in Settings > Privacy > Share Usage Data.
-    - q: Does it work on iPad, and in my language?
-      a: Yes. Loungemote has a split-view layout for iPad and needs iOS 17 or iPadOS 17 or later. The app is available in English, Chinese (Simplified and Traditional), Japanese, Korean, German, French, Spanish, Portuguese (Brazil), Russian and Indonesian.
+      a: No account or ads. Remote commands go directly from your phone to the TV. Pairing records stay on your device. Android has no Firebase configuration in the current release. iOS has optional Firebase usage and crash reports, on by default. Google Cast collects separate SDK diagnostics. See the privacy policy for details.
+    - q: Is Loungemote available for Android and iPhone?
+      a: Android is available on Google Play for phones and tablets running Android 8.0 or later. iPhone and iPad are coming soon to the App Store and require iOS 17 or iPadOS 17 or later. No iOS release date is announced. The app supports English, Chinese (Simplified and Traditional), Japanese, Korean, German, French, Spanish, Portuguese (Brazil), Russian and Indonesian.
+    - q: Does casting mirror my phone screen?
+      a: "Media casting sends selected photos, videos, files or supported links to a compatible receiver. Screen mirroring uses your phone’s system feature: Android system screen casting or AirPlay on iOS. Availability depends on your phone and TV; Loungemote does not provide its own screen-mirroring service."
+    - q: How do I restore or cancel Pro?
+      a: Use Restore Purchases in the app with the store account used for payment. Manage Android subscriptions in Google Play and iOS subscriptions in Apple Settings. Deleting the app does not cancel a subscription. Purchases do not transfer between Google Play and the App Store.
 cta:
+  scan_android: Android · Scan to download
   title: Put the remote away.
-  live: Loungemote is a free download for iPhone and iPad.
-  soon: Loungemote will be a free download for iPhone and iPad.
-  meta: Requires iOS 17 or iPadOS 17 or later.
+  meta: Android 8.0+ · iOS 17+ / iPadOS 17+
+description: Wi-Fi TV remote for Android, iPhone and iPad. Android is on Google Play; iOS is coming soon. Control Samsung, LG, Roku and more. No ads or account.
+badge:
+  play_label: Get Loungemote for Android on Google Play
+  ios_soon: iPhone and iPad version coming soon

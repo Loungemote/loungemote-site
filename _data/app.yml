@@ -1,13 +1,20 @@
-# Facts about the app for the structured data in _includes/head.html. Keep in step with the App Store description.
+# Shared and platform-specific features for MobileApplication structured data.
 features:
-  - Wi-Fi TV remote for Samsung, LG, Roku, Fire TV, Android TV, Google TV, Vizio, Sony, Xiaomi, Hisense and Philips TVs
-  - "Loungemote Pro: directional pad, volume, channels, playback and power keys, with a 3-day free trial for new subscribers"
-  - Automatic TV discovery on the local network, and adding a TV by IP address
-  - Turning a TV on over Wi-Fi with Wake-on-LAN
-  - Input switching on LG, Sony, Vizio and Hisense TVs
-  - Simple layout with big buttons
-  - "Loungemote Pro: casting photos, slideshows, videos, files and links"
-  - "Loungemote Pro: phone keyboard, apps in one tap and swipe touchpad"
-  - "Loungemote Pro: Siri and Shortcuts to turn the TV on or off, mute it or open an app"
-  - iPad split-view layout and Demo TV
-  - No account, no ads and no infrared blaster
+- Wi-Fi TV remote for Samsung, LG, Roku, Fire TV, Android TV, Google TV, Vizio, Sony,
+  Xiaomi, Hisense and Philips TVs
+- 'Loungemote Pro: directional pad, volume, channels, playback and power keys, with
+  a 3-day weekly trial for eligible new subscribers'
+- Automatic TV discovery on the local network, and adding a TV by IP address
+- Turning a TV on over Wi-Fi with Wake-on-LAN
+- Input switching on LG, Sony, Vizio and Hisense TVs
+- Simple layout with big buttons
+- 'Loungemote Pro: casting photos, slideshows, videos, files and links'
+- 'Loungemote Pro: phone keyboard, apps in one tap and swipe touchpad'
+- No account, no ads and no infrared blaster
+android_features:
+- Demo TV on Android
+- Guide to Android system screen casting on compatible phones and TVs
+ios_features:
+- Demo TV and iPad split-view layout
+- 'Loungemote Pro: Siri and Shortcuts'
+- Guide to AirPlay mirroring on compatible TVs
