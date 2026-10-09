@@ -1,0 +1,8 @@
+{%- assign qr = site.data.store_qr.google_play -%}
+{%- comment -%} Hide stale QR artwork when the configured store URL changes. {%- endcomment -%}
+{%- if site.google_play_url and site.google_play_url != "" and qr.url == site.google_play_url -%}
+<a class="download-qr" href="{{ site.google_play_url | escape }}" aria-label="{{ t.badge.play_label | escape }}" rel="noopener">
+  <img class="download-qr__image" src="{{ qr.image | relative_url }}" alt="" width="200" height="200" loading="lazy" decoding="async">
+  <span class="download-qr__label">{{ t.cta.scan_android }}</span>
+</a>
+{%- endif -%}

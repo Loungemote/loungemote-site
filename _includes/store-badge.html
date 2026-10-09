@@ -1,17 +1,22 @@
 {%- comment -%}
-  App Store call to action. While `app_store_url` in _config.yml is empty it is a "Coming soon" placeholder;
-  with a URL it becomes the download link. Replace it with Apple's official badge artwork if you prefer
-  (https://developer.apple.com/app-store/marketing/guidelines/).
+  Download links. Google Play uses Google's official badge artwork, unmodified apart from trimming its transparent
+  padding (https://play.google.com/intl/en_us/badges/). Until iOS launches, a plain text line stands in for the App
+  Store; at launch, swap the App Store link below for Apple's official badge.
 {%- endcomment -%}
-{%- assign b = site.data.home[page.i18n].badge -%}
-{%- if site.app_store_url and site.app_store_url != "" -%}
-<a class="store-badge" href="{{ site.app_store_url }}" rel="noopener">
-  {% include icon.html name="download" %}
-  <span><small>{{ b.small | default: "Download on the" }}</small><strong>App Store</strong></span>
-</a>
-{%- else -%}
-<span class="store-badge store-badge--soon" role="img" aria-label="{{ b.soon_label | default: 'Coming soon to the App Store' }}">
-  {% include icon.html name="download" %}
-  <span aria-hidden="true"><small>{{ b.soon | default: "Coming soon to the" }}</small><strong>App Store</strong></span>
-</span>
-{%- endif -%}
+{%- assign b = site.data.home[page.i18n].badge | default: site.data.home.en.badge -%}
+{%- assign play_lang = page.i18n | default: "en" -%}
+<div class="store-links" aria-label="{{ b.stores_label | default: 'App downloads' }}">
+  {%- if site.google_play_url and site.google_play_url != "" %}
+  <a class="store-play" href="{{ site.google_play_url | escape }}" rel="noopener">
+    <img src="{{ '/assets/img/badges/google-play-' | append: play_lang | append: '.webp' | relative_url }}" alt="{{ b.play_label | escape }}" width="188" height="56" decoding="async">
+  </a>
+  {%- endif %}
+  {%- if site.app_store_url and site.app_store_url != "" %}
+  <a class="store-badge" href="{{ site.app_store_url | escape }}" rel="noopener">
+    {% include store-icon.html store="app-store" %}
+    <span><small>{{ b.small | default: 'Download on the' }}</small><strong>App Store</strong></span>
+  </a>
+  {%- else %}
+  <p class="store-soon">{{ b.ios_soon | default: 'iPhone and iPad version coming soon' }}</p>
+  {%- endif %}
+</div>

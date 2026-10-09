@@ -78,7 +78,9 @@ layout: default
     <ol class="steps">
       {%- for step in t.how.steps %}
       <li class="step" data-reveal>
-        <div class="step__art">{% include phone.html screen=step.screen alt=step.alt %}</div>
+        <div class="step__art">
+          {% include phone.html screen=step.screen alt=step.alt %}
+        </div>
         <div class="step__body">
           <span class="step__num" aria-hidden="true">{{ forloop.index }}</span>
           <h3>{{ step.title }}</h3>
@@ -160,8 +162,10 @@ layout: default
       <div class="cta__glow" aria-hidden="true"></div>
       <img class="cta__icon" src="{{ '/assets/img/app-icon.webp' | relative_url }}" alt="" width="96" height="96" loading="lazy" decoding="async">
       <h2>{{ t.cta.title }}</h2>
-      <p>{% if site.app_store_url and site.app_store_url != "" %}{{ t.cta.live }}{% else %}{{ t.cta.soon }}{% endif %}</p>
-      {% include store-badge.html %}
+      <div class="cta__downloads">
+        {% include download-qr.html %}
+        {% include store-badge.html %}
+      </div>
       <p class="cta__meta">{{ t.cta.meta }}</p>
       <ul class="cta__links">
         <li><a href="{{ '/privacy/' | relative_url }}" hreflang="en">Privacy Policy</a></li>

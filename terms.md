@@ -14,6 +14,8 @@ By downloading or using Loungemote ("the app"), you agree to these terms. If you
 
 ## License
 
+For Android, we grant you a personal, non-exclusive, non-transferable license to use Loungemote on your own compatible devices under these terms and applicable Google Play terms.
+
 For the iOS version, Apple's [Licensed Application End User License Agreement (Standard EULA)](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) applies to your use of Loungemote. It sets out your license to use the app, the warranty disclaimer and the limits of liability. The terms on this page add information about purchases, supported devices and acceptable use.
 
 ## Loungemote Pro
@@ -24,7 +26,9 @@ Loungemote is free to download. Setting up a TV, a first key press to check the 
 - an auto-renewable yearly subscription,
 - a one-time lifetime purchase.
 
-The app shows the price and the period before you buy.
+The app shows the price, billing period and eligible offers before you buy. Google Play and App Store purchases are separate and do not transfer between platforms.
+
+## iOS purchases
 
 - Apple charges the payment to your Apple Account when you confirm the purchase.
 - A subscription renews automatically. To stop the renewal, turn off auto-renew at least 24 hours before the end of the current period.
@@ -38,7 +42,7 @@ The app shows the price and the period before you buy.
 
 The Android version uses Google Play. Its Pro plans are weekly, yearly and a one-time Lifetime purchase. Eligible new subscribers can receive a three-day trial on the weekly plan; the yearly plan has no trial. Local prices and eligible offers are shown before purchase.
 
-Google Play processes Android payments. Subscriptions renew unless cancelled through Google Play before renewal. Deleting the app does not cancel a subscription. Restore access with the Google account used for the purchase. Google Play handles Android refund requests. Apple-specific payment and cancellation instructions above apply only to iOS purchases.
+Google Play processes Android payments. Subscriptions renew unless cancelled through Google Play before renewal. Deleting the app does not cancel a subscription. Restore access with the Google account used for the purchase. See [Google Play subscription help](https://support.google.com/googleplay/answer/7018481?hl=en) and [Google Play refund help](https://support.google.com/googleplay/answer/2479637?hl=en). Apple-specific payment and cancellation instructions above apply only to iOS purchases.
 
 ## Acceptable use
 
@@ -60,7 +64,7 @@ The [Privacy Policy]({{ '/privacy/' | relative_url }}) explains which data the a
 
 ## Warranty and liability
 
-The app is provided "as is", as the Standard EULA describes. To the extent the law allows, we are not liable for indirect or consequential loss that comes from using the app, for example a missed recording or a TV that did not respond. Nothing in these terms limits rights that the consumer law of your country gives you and that cannot be waived.
+The app is provided "as is" to the extent the law allows. Apple’s Standard EULA also applies to the iOS version. To the extent the law allows, we are not liable for indirect or consequential loss that comes from using the app, for example a missed recording or a TV that did not respond. Nothing in these terms limits rights that the consumer law of your country gives you and that cannot be waived.
 
 ## Changes
 
