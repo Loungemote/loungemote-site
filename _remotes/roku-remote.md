@@ -3,7 +3,7 @@ title: Roku Remote App for Android and iOS
 seo_title: Roku Remote App for Android and iOS · Loungemote
 brand: Roku
 platform: Roku
-description: Roku Wi-Fi remote for Android and iOS. Android is on Google Play; iPhone and iPad are coming soon. Setup, pairing, Pro features and TV compatibility.
+description: Roku Wi-Fi remote for Android and iOS, on Google Play and the App Store. Setup, pairing, Pro features and TV compatibility.
 lead: Loungemote turns your phone or tablet into a remote for Roku TVs and Roku streaming players, including Roku TV models from TCL, Hisense and other brands. There is nothing to pair.
 faq:
 - q: Does Loungemote work with TCL and Hisense Roku TVs?
@@ -31,7 +31,7 @@ With Loungemote Pro (eligible new subscribers can try the weekly plan free for 3
 - Swipe touchpad for one-handed navigation
 - Every TV at home: save several TVs and switch in a tap
 - Casting: photos, slideshows, videos, files and links
-- Siri and Shortcuts (iOS only, coming soon): turn the TV on or off, mute it or open an app by voice
+- Siri and Shortcuts (iOS only): turn the TV on or off, mute it or open an app by voice
 
 Some features depend on the TV model and its software.
 

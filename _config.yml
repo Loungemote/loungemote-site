@@ -2,21 +2,21 @@ title: Loungemote
 tagline: Your phone is the TV remote
 # The home page title is `seo_title` in index.html; other pages use "Title · Loungemote".
 description: >-
-  Wi-Fi TV remote for Android, iPhone and iPad. Android is available on Google Play;
-  iOS is coming soon. Control Samsung, LG, Roku, Google TV and more. No ads or account.
+  Wi-Fi TV remote for Android, iPhone and iPad, on Google Play and the App Store.
+  Control Samsung, LG, Roku, Google TV, Apple TV and more. No ads or account.
 lang: en
 
 # Every contact link uses this address. It must match `supportEmail` in the app's Links.swift.
 email: loungemote@outlook.com
 # Shown on the Privacy Policy and the Terms of Use. Change it whenever one of them changes.
-effective_date: October 8, 2026
+effective_date: October 12, 2026
 
 # Store availability is independent for each platform. Only set a URL when that app is live.
 google_play_url: "https://play.google.com/store/apps/details?id=com.pesafy.loungemote"
-# iOS is not released yet. Keep both Apple fields empty until launch.
-app_store_url: ""
+# The live iPhone and iPad listing. Without a storefront, it opens the App Store app in each visitor's own store.
+app_store_url: "https://apps.apple.com/app/id6817682889"
 # The numeric Apple ID from App Store Connect. Adds Safari's Smart App Banner on iPhone and iPad.
-app_store_id: ""
+app_store_id: "6817682889"
 
 # With a custom domain: set `url` to it, set `baseurl` to "", and add a CNAME file.
 url: https://loungemote.github.io

@@ -1,6 +1,6 @@
 # Home page copy. Keep release status, platform features and privacy facts in step across all languages.
 title: Loungemote - 万能电视遥控器：三星、LG、索尼、Roku 手机遥控
-description: Android、iPhone 和 iPad 电视遥控器。Android 已登陆 Google Play，iOS 即将上线。通过 Wi-Fi 控制三星、LG、索尼、Roku、Google TV 等电视，无需红外、账号，没有广告。
+description: Android、iPhone 和 iPad 电视遥控器，已登陆 Google Play 和 App Store。通过 Wi-Fi 控制三星、LG、索尼、Roku、Google TV、Apple TV 等，无需红外、账号，没有广告。
 nav:
   features: 功能
   how: 使用方法
@@ -10,8 +10,8 @@ nav:
   support: 支持
   get: 获取 App
 badge:
-  small: 下载于
   play_label: 在 Google Play 下载 Loungemote Android 版
+  app_store_label: 在 App Store 下载 Loungemote iPhone 和 iPad 版
   ios_soon: iPhone 和 iPad 版即将推出
 hero:
   eyebrow: 支持 Android、iPhone 和 iPad
@@ -40,9 +40,9 @@ how:
     - { screen: "pair", title: "在电视上确认一次", text: "在电视上选择“允许”，或输入电视显示的配对码。只需第一次。", alt: "配对界面预览：电视询问是否信任这台手机。" }
     - { screen: "apps", title: "开始遥控", text: "手机就是遥控器了。下次打开 App 会自动重连。", alt: "一键打开应用：客厅电视上的应用。" }
 devices:
-  title: 十个电视平台，一个 App。
+  title: 十一个电视平台，一个 App。
   lead: Loungemote 使用各电视自己的网络协议，不需要红外发射器或网关。手机或平板和电视必须连接同一个 Wi-Fi。
-  footnote: TCL 等其他品牌的 Roku TV 和 Google TV 机型同样适用。Fire TV 不支持投屏。不支持 Apple TV 和仅支持红外控制的电视。
+  footnote: TCL 等其他品牌的 Roku TV 和 Google TV 机型同样适用。Fire TV 不支持投屏；Apple TV 通过 AirPlay 接收照片和视频。不支持只能用红外遥控的电视。
   items:
     - { name: "三星 Samsung", detail: "Tizen 智能电视，2016 年及以后机型" }
     - { name: "LG", detail: "webOS 智能电视" }
@@ -54,6 +54,7 @@ devices:
     - { name: "Roku", detail: "Roku TV 和 Roku 播放器" }
     - { name: "Amazon Fire TV", detail: "Fire TV Stick、Fire TV Cube 和 Fire TV 电视" }
     - { name: "Vizio", detail: "SmartCast 电视" }
+    - { name: "Apple TV", detail: "Apple TV HD 和 Apple TV 4K" }
 privacy:
   title: 从设计上<em>保护隐私</em>。
   lead: 遥控器没有理由知道你是谁。Loungemote 没有账号，也没有自己的服务器，遥控指令直接从手机发到电视。
@@ -71,7 +72,9 @@ faq:
     - q: Loungemote 免费吗？
       a: 下载、设置、用于确认连接的首次按键和演示电视免费，没有广告。控制电视、触控板、手机键盘、应用启动和媒体投放需要 Loungemote Pro。可选周订阅（符合条件的新用户免费试用 3 天）、无试用期的年订阅或一次性买断，价格和优惠在付款前显示。Android 通过 Google Play 购买，iOS 通过 App Store 购买。Siri 和快捷指令仅适用于 iOS。
     - q: 支持哪些电视？
-      a: 三星 Tizen 智能电视（2016 年及以后）、LG webOS 电视、索尼 Bravia、小米 PatchWall 电视、海信 VIDAA 电视、飞利浦 Titan OS 和 Saphi 电视、Android TV 和 Google TV 设备、Roku、Amazon Fire TV 和 Vizio SmartCast。TCL 等品牌的 Roku TV 和 Google TV 机型同样适用。不支持 Apple TV 和仅支持红外控制的电视。
+      a: 三星 Tizen 智能电视（2016 年及以后）、LG webOS 电视、索尼 Bravia、小米 PatchWall 电视、海信 VIDAA 电视、飞利浦 Titan OS 和 Saphi 电视、Android TV 和 Google TV 设备、Roku、Amazon Fire TV、Vizio SmartCast，以及 Apple TV HD 和 Apple TV 4K。TCL 等品牌的 Roku TV 和 Google TV 机型同样适用。不支持只能用红外遥控的电视。
+    - q: Loungemote 支持 Apple TV 吗？
+      a: 支持 Apple TV HD 和 Apple TV 4K，Android、iPhone 和 iPad 都能用。输入 Apple TV 显示的配对码，只需一次。可以使用遥控按键、用手机键盘输入、打开应用，还能看到正在播放的内容和封面，播放、暂停、快进快退和静音。照片和视频请用 AirPlay 发送到 Apple TV，不经过 Loungemote。
     - q: 需要红外发射器或万能遥控器吗？
       a: 不需要。Loungemote 通过家里的 Wi-Fi 控制智能电视，不使用红外，所以无法控制只能用红外遥控的老电视。
     - q: 找不到电视怎么办？
@@ -81,12 +84,13 @@ faq:
     - q: Loungemote 收集哪些数据？
       a: 无需账号，没有广告，遥控指令从手机直接发到电视，配对记录留在设备上。Android 当前版本未配置 Firebase；iOS 提供默认开启、可关闭的 Firebase 使用统计和崩溃报告。Google Cast 另有 SDK 诊断数据收集，详情见隐私政策。
     - q: Android 和 iPhone 版都上线了吗？
-      a: Android 版已登陆 Google Play，支持 Android 8.0 及以上的手机和平板。iPhone 和 iPad 版即将登陆 App Store，需要 iOS 17 或 iPadOS 17 及以上版本，目前没有公布上线日期。App 支持简体中文、繁体中文、英语、日语、韩语、德语、法语、西班牙语、葡萄牙语（巴西）、俄语和印尼语。
+      a: 都已上线。Android 版在 Google Play，支持 Android 8.0 及以上的手机和平板。iPhone 和 iPad 版在 App Store，需要 iOS 17 或 iPadOS 17 及以上版本。App 支持简体中文、繁体中文、英语、日语、韩语、德语、法语、西班牙语、葡萄牙语（巴西）、俄语和印尼语。
     - q: 媒体投放就是屏幕镜像吗？
       a: 媒体投放将选定的照片、视频、文件或支持的链接发送到兼容设备。屏幕镜像使用手机系统功能：Android 系统投屏或 iOS AirPlay，是否可用取决于手机和电视。Loungemote 不提供独立的屏幕镜像服务。
     - q: 如何恢复购买或取消 Pro 订阅？
       a: 使用付款时的商店账号，在 App 中选择“恢复购买”。Android 订阅在 Google Play 管理，iOS 订阅在 Apple 系统设置管理。删除 App 不会取消订阅，Google Play 和 App Store 之间的购买不互通。
 cta:
   scan_android: Android · 扫码下载
+  scan_ios: iPhone 和 iPad · 扫码下载
   title: 把遥控器收起来吧。
   meta: Android 8.0 及以上 · iOS 17 / iPadOS 17 及以上

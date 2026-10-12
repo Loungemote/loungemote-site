@@ -25,7 +25,7 @@ In the app, **Contact Support** writes this email for you and can attach a diagn
   {%- endfor %}
 </ul>
 
-Philips TVs with Google TV connect as Google TV. Casting is available on compatible TVs, Chromecast and DLNA devices; formats and playback features depend on the receiver. Casting to Fire TV is not supported. Apple TV is not supported.
+Philips TVs with Google TV connect as Google TV. Casting is available on compatible TVs, Chromecast and DLNA devices; formats and playback features depend on the receiver. Casting to Fire TV is not supported. Apple TV takes photos and videos over AirPlay instead of casting from Loungemote.
 
 Your phone or tablet and your TV must be on the same Wi-Fi network. Android requires Android 8.0 or later. iPhone and iPad require iOS 17 or iPadOS 17 or later.
 {% include store-badge.html %}
@@ -44,7 +44,7 @@ If the TV still does not appear, choose **Add by IP address** in the app and typ
 
 The first time you connect, Samsung and LG TVs show a prompt on the screen. Select **Allow**. If you do not have the TV remote, use the buttons on the TV.
 
-Android TV, Google TV, Fire TV, Vizio, Sony, Hisense and Philips Titan OS TVs show a code on the screen. Type this code in the app.
+Android TV, Google TV, Fire TV, Vizio, Sony, Hisense and Philips Titan OS TVs and Apple TV show a code on the screen. Type this code in the app.
 
 ## The app cannot turn on my TV
 
