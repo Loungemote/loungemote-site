@@ -3,7 +3,7 @@ title: Fire TV Remote App for Android and iOS
 seo_title: Fire TV Remote App for Android and iOS · Loungemote
 brand: Fire TV
 platform: Amazon Fire TV
-description: Amazon Fire TV Wi-Fi remote for Android and iOS. Android is on Google Play; iPhone and iPad are coming soon. Setup, pairing, Pro features and TV compatibility.
+description: Amazon Fire TV Wi-Fi remote for Android and iOS, on Google Play and the App Store. Setup, pairing, Pro features and TV compatibility.
 lead: Loungemote turns your phone or tablet into a remote for Amazon Fire TV streaming devices and Fire TV smart TVs. It works over your Wi-Fi and needs no Amazon sign-in.
 faq:
 - q: Does Loungemote work with the Fire TV Stick?
@@ -30,7 +30,7 @@ With Loungemote Pro (eligible new subscribers can try the weekly plan free for 3
 - Apps in one tap: open the apps on the TV from your phone
 - Swipe touchpad for one-handed navigation
 - Every TV at home: save several TVs and switch in a tap
-- Siri and Shortcuts (iOS only, coming soon): turn the TV on or off, mute it or open an app by voice
+- Siri and Shortcuts (iOS only): turn the TV on or off, mute it or open an app by voice
 
 Some features depend on the TV model and its software.
 

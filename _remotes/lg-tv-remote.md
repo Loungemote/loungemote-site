@@ -4,7 +4,7 @@ seo_title: LG TV Remote App for Android and iOS · Loungemote
 brand: LG TVs
 platform: LG
 hero_screen: touchpad
-description: LG Wi-Fi remote for Android and iOS. Android is on Google Play; iPhone and iPad are coming soon. Setup, pairing, Pro features and TV compatibility.
+description: LG Wi-Fi remote for Android and iOS, on Google Play and the App Store. Setup, pairing, Pro features and TV compatibility.
 lead: Loungemote turns your phone or tablet into a remote for LG smart TVs with webOS. It works over your Wi-Fi, needs no LG account, and brings the Magic Remote pointer to your phone.
 faq:
 - q: Does Loungemote work like the LG Magic Remote?
@@ -33,7 +33,7 @@ With Loungemote Pro (eligible new subscribers can try the weekly plan free for 3
 - Swipe touchpad with the on-screen pointer for one-handed navigation
 - Every TV at home: save several TVs and switch in a tap
 - Casting: photos, slideshows, videos, files and links
-- Siri and Shortcuts (iOS only, coming soon): turn the TV on or off, mute it or open an app by voice
+- Siri and Shortcuts (iOS only): turn the TV on or off, mute it or open an app by voice
 
 Some features depend on the TV model and its software.
 

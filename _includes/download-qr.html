@@ -1,8 +1,20 @@
-{%- assign qr = site.data.store_qr.google_play -%}
-{%- comment -%} Hide stale QR artwork when the configured store URL changes. {%- endcomment -%}
-{%- if site.google_play_url and site.google_play_url != "" and qr.url == site.google_play_url -%}
-<a class="download-qr" href="{{ site.google_play_url | escape }}" aria-label="{{ t.badge.play_label | escape }}" rel="noopener">
+{%- comment -%}
+  A desktop QR code for one store: include.store is "google_play" or "app_store" (keys in _data/store_qr.json).
+  Hide stale QR artwork when the configured store URL changes.
+{%- endcomment -%}
+{%- assign qr = site.data.store_qr[include.store] -%}
+{%- if include.store == "app_store" -%}
+  {%- assign store_url = site.app_store_url -%}
+  {%- assign store_label = t.badge.app_store_label -%}
+  {%- assign scan_label = t.cta.scan_ios -%}
+{%- else -%}
+  {%- assign store_url = site.google_play_url -%}
+  {%- assign store_label = t.badge.play_label -%}
+  {%- assign scan_label = t.cta.scan_android -%}
+{%- endif -%}
+{%- if store_url and store_url != "" and qr.url == store_url -%}
+<a class="download-qr" href="{{ store_url | escape }}" aria-label="{{ store_label | escape }}" rel="noopener">
   <img class="download-qr__image" src="{{ qr.image | relative_url }}" alt="" width="200" height="200" loading="lazy" decoding="async">
-  <span class="download-qr__label">{{ t.cta.scan_android }}</span>
+  <span class="download-qr__label">{{ scan_label }}</span>
 </a>
 {%- endif -%}

@@ -1,20 +1,22 @@
 {%- comment -%}
-  Download links. Google Play uses Google's official badge artwork, unmodified apart from trimming its transparent
-  padding (https://play.google.com/intl/en_us/badges/). Until iOS launches, a plain text line stands in for the App
-  Store; at launch, swap the App Store link below for Apple's official badge.
+  Download links, each with the store's official badge artwork in the page's language. Google Play's is unmodified
+  apart from trimming its transparent padding (https://play.google.com/intl/en_us/badges/). The App Store's is Apple's
+  localized SVG, unmodified (https://toolbox.marketingtools.apple.com/app-store/), at the same height. While a store
+  URL is empty its badge is left out; without the App Store, a text line says the iOS version is coming.
 {%- endcomment -%}
 {%- assign b = site.data.home[page.i18n].badge | default: site.data.home.en.badge -%}
-{%- assign play_lang = page.i18n | default: "en" -%}
+{%- assign badge_lang = page.i18n | default: "en" -%}
 <div class="store-links" aria-label="{{ b.stores_label | default: 'App downloads' }}">
   {%- if site.google_play_url and site.google_play_url != "" %}
   <a class="store-play" href="{{ site.google_play_url | escape }}" rel="noopener">
-    <img src="{{ '/assets/img/badges/google-play-' | append: play_lang | append: '.webp' | relative_url }}" alt="{{ b.play_label | escape }}" width="188" height="56" decoding="async">
+    <img src="{{ '/assets/img/badges/google-play-' | append: badge_lang | append: '.webp' | relative_url }}" alt="{{ b.play_label | escape }}" width="188" height="56" decoding="async">
   </a>
   {%- endif %}
   {%- if site.app_store_url and site.app_store_url != "" %}
+  {%- comment -%} Apple's badges are 40 units high; the Chinese and Japanese ones are narrower. {%- endcomment -%}
+  {%- if badge_lang == "zh" or badge_lang == "ja" %}{% assign apple_width = 152 %}{% else %}{% assign apple_width = 168 %}{% endif %}
   <a class="store-badge" href="{{ site.app_store_url | escape }}" rel="noopener">
-    {% include store-icon.html store="app-store" %}
-    <span><small>{{ b.small | default: 'Download on the' }}</small><strong>App Store</strong></span>
+    <img src="{{ '/assets/img/badges/app-store-' | append: badge_lang | append: '.svg' | relative_url }}" alt="{{ b.app_store_label | escape }}" width="{{ apple_width }}" height="56" decoding="async">
   </a>
   {%- else %}
   <p class="store-soon">{{ b.ios_soon | default: 'iPhone and iPad version coming soon' }}</p>

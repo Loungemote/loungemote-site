@@ -2,5 +2,9 @@
   "google_play": {
     "url": "https://play.google.com/store/apps/details?id=com.pesafy.loungemote",
     "image": "/assets/img/google-play-qr.svg"
+  },
+  "app_store": {
+    "url": "https://apps.apple.com/app/id6817682889",
+    "image": "/assets/img/app-store-qr.svg"
   }
 }

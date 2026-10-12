@@ -1,7 +1,7 @@
 # Shared and platform-specific features for MobileApplication structured data.
 features:
 - Wi-Fi TV remote for Samsung, LG, Roku, Fire TV, Android TV, Google TV, Vizio, Sony,
-  Xiaomi, Hisense and Philips TVs
+  Xiaomi, Hisense and Philips TVs, and Apple TV
 - 'Loungemote Pro: directional pad, volume, channels, playback and power keys, with
   a 3-day weekly trial for eligible new subscribers'
 - Automatic TV discovery on the local network, and adding a TV by IP address
@@ -10,6 +10,7 @@ features:
 - Simple layout with big buttons
 - 'Loungemote Pro: casting photos, slideshows, videos, files and links'
 - 'Loungemote Pro: phone keyboard, apps in one tap and swipe touchpad'
+- 'Loungemote Pro: what an Apple TV is playing, with play/pause, skip, seek and mute'
 - No account, no ads and no infrared blaster
 android_features:
 - Demo TV on Android

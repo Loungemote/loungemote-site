@@ -26,7 +26,7 @@ This policy covers Loungemote on iOS and Android. The Android package is `com.pe
 
 ### Local data and TV control
 
-The Android app stores saved TV names, local network addresses, settings and playlists on the device. Pairing records use AES-GCM with a non-exportable key in Android Keystore. Android TV client keys also stay in Android Keystore. The app excludes these records from Android backups.
+The Android app stores saved TV names, local network addresses, settings and playlists on the device. Pairing records use AES-GCM with a non-exportable key in Android Keystore; for an Apple TV they include the keys that the app and the Apple TV exchange when you pair them. Android TV client keys also stay in Android Keystore. The app excludes these records from Android backups.
 
 Remove a TV in the app to remove its saved pairing records. Clear recent links and playlists in the app to remove those entries. Android's app-data deletion controls remove the app's local records.
 
@@ -48,7 +48,7 @@ The support address is [{{ site.email }}](mailto:{{ site.email }}). You can revi
 
 ## iPhone and iPad privacy
 
-The iPhone and iPad app is not yet available on the App Store. The following sections describe the iOS version in preparation for release. The website, children and contact sections apply to both platforms.
+The iPhone and iPad app is available on the App Store. The following sections describe the iOS version. The website, children and contact sections apply to both platforms.
 
 ## iOS: local network access {#local-network-access}
 
@@ -82,7 +82,7 @@ When it is on, the app sends:
 - crash reports: the crash location in the code, the app and iOS versions, your device model, and the app events just before the crash,
 - data that the Firebase SDK adds by itself: an app instance identifier created at random for this installation, your device model and iOS version, and a coarse location (country or region) that Google derives from your IP address.
 
-The app never sends: TV names, IP or MAC addresses, Wi-Fi network names, serial numbers, text you type on the TV, the names of apps you open on the TV, the names or contents of photos, videos, files and links you cast, pairing codes or keys, your Apple Account, email address or transaction IDs.
+The app never sends: TV names, IP or MAC addresses, Wi-Fi network names, serial numbers, text you type on the TV, the names of apps you open on the TV, what an Apple TV is playing, the names or contents of photos, videos, files and links you cast, pairing codes or keys, your Apple Account, email address or transaction IDs.
 
 The app does not use the advertising identifier (IDFA), does not ask to track you, and turns off Google's advertising features, so this data is not used for ads. We do not link it to your identity. Google keeps event-level data for no more than 14 months and crash reports for 90 days.
 
@@ -94,7 +94,8 @@ To reconnect to your TVs quickly, the app keeps this data on your iPhone:
 
 - the name, model, platform, IP address and MAC address of each TV that you add,
 - pairing data from the TV, for example an access token and a certificate fingerprint,
-- for Android TV and Google TV, a security key and certificate that the app creates on your iPhone.
+- for Android TV and Google TV, a security key and certificate that the app creates on your iPhone,
+- for Apple TV, the keys that the app and the Apple TV exchange when you pair them.
 
 The app uses this data only to connect to your TVs. It does not send this data to us or to any third party. The TV platform and model number are the only TV details included in usage statistics.
 

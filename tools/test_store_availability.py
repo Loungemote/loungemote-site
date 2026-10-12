@@ -46,9 +46,10 @@ class Downloads(HTMLParser):
 
 class StoreAvailabilityTests(unittest.TestCase):
     def test_store_states_do_not_cross_platforms(self):
-        qr = json.loads((ROOT / "_data/store_qr.json").read_text())["google_play"]
+        qrs = json.loads((ROOT / "_data/store_qr.json").read_text())
+        live_apple = qrs["app_store"]["url"]
         for play_url, apple_url in [(PLAY, ""), (PLAY, APPLE), ("", APPLE), ("", ""),
-                                    (PLAY + "&hl=de", "")]:
+                                    (PLAY + "&hl=de", ""), (PLAY, live_apple), ("", live_apple)]:
             android, ios = bool(play_url), bool(apple_url)
             with self.subTest(play=play_url, apple=apple_url), tempfile.TemporaryDirectory() as directory:
                 directory = Path(directory)
@@ -81,8 +82,10 @@ class StoreAvailabilityTests(unittest.TestCase):
                 for route in HOMES:
                     page = Page()
                     page.feed((built / route).read_text())
-                    qr_images = [img for img in page.imgs if img["src"].endswith(qr["image"])]
-                    self.assertEqual(len(qr_images), 1 if play_url == qr["url"] else 0)
+                    for store, url in [("google_play", play_url), ("app_store", apple_url)]:
+                        qr = qrs[store]
+                        qr_images = [img for img in page.imgs if img["src"].endswith(qr["image"])]
+                        self.assertEqual(len(qr_images), 1 if url == qr["url"] else 0, store)
                     graph = json.loads(page.jsonld[0])["@graph"]
                     apps = {node["@id"].split("#")[-1]: node for node in graph
                             if node["@type"] == "MobileApplication"}

@@ -31,7 +31,7 @@ layout: default
 </section>
 
 {%- comment -%} Brand names stay in Latin script in every language, as in the app. {%- endcomment -%}
-{%- assign names = "Roku|Samsung|LG|Android TV|Google TV|Fire TV|Vizio|Sony|Xiaomi|Hisense|Philips|Chromecast|DLNA" | split: "|" %}
+{%- assign names = "Roku|Samsung|LG|Android TV|Google TV|Fire TV|Apple TV|Vizio|Sony|Xiaomi|Hisense|Philips|Chromecast|DLNA" | split: "|" %}
 <section class="platforms" aria-label="{{ t.hero.works_with }}">
   <p class="platforms__label">{{ t.hero.works_with }}</p>
   <div class="marquee" data-marquee>
@@ -163,8 +163,9 @@ layout: default
       <img class="cta__icon" src="{{ '/assets/img/app-icon.webp' | relative_url }}" alt="" width="96" height="96" loading="lazy" decoding="async">
       <h2>{{ t.cta.title }}</h2>
       <div class="cta__downloads">
-        {% include download-qr.html %}
+        {% include download-qr.html store="google_play" %}
         {% include store-badge.html %}
+        {% include download-qr.html store="app_store" %}
       </div>
       <p class="cta__meta">{{ t.cta.meta }}</p>
       <ul class="cta__links">

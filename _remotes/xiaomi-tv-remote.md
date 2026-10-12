@@ -3,7 +3,7 @@ title: Xiaomi TV Remote App for Android and iOS
 seo_title: Xiaomi TV Remote App for Android and iOS · Loungemote
 brand: Xiaomi TVs
 platform: Xiaomi
-description: Xiaomi Wi-Fi remote for Android and iOS. Android is on Google Play; iPhone and iPad are coming soon. Setup, pairing, Pro features and TV compatibility.
+description: Xiaomi Wi-Fi remote for Android and iOS, on Google Play and the App Store. Setup, pairing, Pro features and TV compatibility.
 lead: Loungemote turns your phone or tablet into a remote for Xiaomi TVs with PatchWall. There is nothing to pair. Xiaomi TVs with Google TV work too.
 faq:
 - q: Does Loungemote work with the Mi TV Stick?
@@ -27,7 +27,7 @@ With Loungemote Pro (eligible new subscribers can try the weekly plan free for 3
 - Swipe touchpad for one-handed navigation
 - Every TV at home: save several TVs and switch in a tap
 - Casting: photos, slideshows, videos, files and links
-- Siri and Shortcuts (iOS only, coming soon): turn the TV on or off or change the volume by voice
+- Siri and Shortcuts (iOS only): turn the TV on or off or change the volume by voice
 
 Some features depend on the TV model and its software.
 

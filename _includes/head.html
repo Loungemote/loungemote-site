@@ -100,16 +100,20 @@
       "@type": "MobileApplication",
       "@id": "{{ '/' | absolute_url }}#ios-app",
       "name": "{{ site.title }}",
+      "alternateName": "Loungemote - TV Remote Control",
+      "description": {{ description | jsonify }},
       "url": "{{ '/' | absolute_url }}",
+      "image": "{{ '/assets/img/icon-512.png' | absolute_url }}",
       "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "iOS 17.0 or later, iPadOS 17.0 or later",
+      "inLanguage": ["en", "zh-Hans", "zh-Hant", "ja", "ko", "de", "fr", "es", "pt-BR", "ru", "id"],
       "featureList": {{ site.data.app.features | concat: site.data.app.ios_features | jsonify }},
       "downloadUrl": {{ site.app_store_url | jsonify }},
       "installUrl": {{ site.app_store_url | jsonify }},
       "sameAs": [{{ site.app_store_url | jsonify }}],
       "publisher": { "@id": "{{ '/' | absolute_url }}#organization" },
       "isAccessibleForFree": false,
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free download. Continued TV control requires Loungemote Pro." }
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free download on the App Store. Continued TV control needs Loungemote Pro; the weekly plan offers a 3-day trial for eligible new subscribers." }
     },
     {%- endif %}
     {

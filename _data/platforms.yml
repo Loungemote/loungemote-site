@@ -40,3 +40,7 @@
   page: /philips-tv-remote/
   detail: TVs with Titan OS or Saphi
   pairing: Code on Titan OS
+- name: Apple TV
+  page: /apple-tv-remote/
+  detail: Apple TV HD and Apple TV 4K
+  pairing: Code on the TV
